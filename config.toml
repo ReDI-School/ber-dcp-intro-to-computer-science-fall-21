@@ -1,4 +1,4 @@
-baseURL = "https://redi-school.github.io/ber-dcp-intro-to-computer-science/"
+baseURL = "https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/"
 title = "Intro to Computer-Science Berlin 2021"
 enableRobotsTXT = true
 # this example loads the theme as hugo module
@@ -42,7 +42,7 @@ publishDir = "docs"
 # Everything below this are Site Params
 
 [params]
-  repo = "https://github.com/ReDI-School/ber-dcp-intro-to-computer-science"
+  repo = "https://github.com/ReDI-School/ber-dcp-intro-to-computer-science-fall-21"
 
   time_format_blog = "Monday, January 02, 2006"
   time_format_default = "January 2, 2006"
@@ -63,5 +63,5 @@ publishDir = "docs"
     name = "GitHub"
     iconLight = "images/GitHubMarkLight.svg"
     iconDark = "images/GitHubMarkDark.svg"
-    url = "https://github.com/ReDI-School/ber-dcp-intro-to-computer-science"
+    url = "https://github.com/ReDI-School/ber-dcp-intro-to-computer-science-fall-21"
 
