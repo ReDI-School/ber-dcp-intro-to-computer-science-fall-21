@@ -77,7 +77,7 @@ Package managers allow you to:
 
 There are different package managers available for different Operating Systems and Distributions. Here are some examples:
 
-- MacOS: `brew install golang`, AppStore
+- MacOS: homebrew, AppStore
 - Windows: PackageManagement, Chocalatey...
 
   {{< picture "windows-package-management.png" "windows-package-management.png" "Windows package management" >}}
