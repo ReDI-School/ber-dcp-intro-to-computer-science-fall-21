@@ -148,14 +148,14 @@ Let's organize the directory that we are in by putting some of the files in a ne
 - Move `test1.txt` into the `test-files` directory.
 - List the contents of `test-files` and make sure it contains only `test1.txt`, and list the contents of `redi-2021-09-16` to confirm that `test1.txt` has been moved.
 
-### 5. Copying files and directories
+### 5. Copy files and directories
 
 - Copy of `hello.txt` into the `test-files` directory. (Hint: this can be done in one command by copying the file to the proper location, or by creating a copy and then moving the file.)
 - Rename the original `hello.txt` to `original-hello.txt`. (Hint: "renaming" is the same as moving a file to a new file path.)
 - Make a copy of the `test-files` directory named `test-files-copy`.
 - List the contents of `test-files-copy` and make sure that it contains both `test1.txt` and `original-hello.txt`.
 
-### 6. Deleting files and directories
+### 6. Delete files and directories
 
 Be careful with this one! Please double check the command with one of the teachers before removing anything, since **anything removed via `rm` cannot be retrieved**!!
 
