@@ -39,7 +39,7 @@ description = "Goals"
 
 ## Navigate file system and working with files & folders (demo) | 10-15 minutes
 
-Let's go through how to navigate the file system and work with files and folders. We will do this both using the GUI (Graphical User Interface) and then via the command line using the commands listed in the cheat sheet below. Please refer to this cheat sheet when working through the exercises in groups later!
+Let's go through how to navigate the file system and work with files and folders. We will do this both via the command line using the commands listed in the cheat sheet below and then using the GUI (Graphical User Interface). Please refer to this cheat sheet when working through the exercises in groups later!
 
 ### Command Line cheat sheet
 
