@@ -27,25 +27,15 @@ description = "Goals"
 | Command line practice in groups                              | 40-50 minutes        | local terminal OR repl.it account |
 | Summary & Next class overview                                | 5 minutes            | ❌                                |
 
-<!-- EN TODO: move this to Kahoot questions -->
-<!-- ## Recap [Session 1](../command_line_part1)
-
-- Questions
-  - Linux and Windows are ...
-  - To create a directory in linux we use the command: ...
-  - To create a file in linux we use the command: ...
-  - Commands like above/before expect us to provide also an ... -->
-
 ## Useful Terms/Concepts
 
-<!-- TODO define these -->
-
-- **Files in Linux** -- what's the difference between files and directories?
-  - **File permissions**: define which users/groups are allowed to read/write/execute certain files. If a user has the following permissions, they can:
-    - **Read**: view the contents of the file
-    - **Write**: modify the contents of the file
-    - **Execute**: run the program (remember: programs are also treated as "files" in Linux systems and are permissioned using the same terms!)
-- **File system**:
+- **File**: data, usually organized according to some specific _file format_ (e.g. `txt`, `mp3`, `docx`)
+- **Directory**: a file that stores information about the length and location of other files, similar to a table of contents
+- **File system**: the part of an operating system that stores and keeps track of files
+- **File permissions**: define which users/groups are allowed to read/write/execute certain files. If a user has the following permissions, they can:
+  - **Read**: view the contents of the file
+  - **Write**: modify the contents of the file
+  - **Execute**: run the program (remember: programs are also treated as "files" in Linux systems and are permissioned using the same terms!)
 
 ## Navigate file system and working with files & folders (demo) | 10-15 minutes
 
