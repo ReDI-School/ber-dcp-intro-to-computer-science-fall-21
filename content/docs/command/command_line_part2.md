@@ -30,7 +30,7 @@ description = "Goals"
 ## Useful Terms/Concepts
 
 - **File**: data, usually organized according to some specific _file format_ (e.g. `txt`, `mp3`, `docx`)
-- **Directory**: a file that stores information about the length and location of other files, similar to a table of contents
+- **Directory**: what we think of as a folder that contains files and other folders; in Linux systems, this is just a file that stores information about the length and location of other files, similar to a table of contents
 - **File system**: the part of an operating system that stores and keeps track of files
 - **File permissions**: define which users/groups are allowed to read/write/execute certain files. If a user has the following permissions, they can:
   - **Read**: view the contents of the file
@@ -57,7 +57,7 @@ Remember that you can look up what a command does by using the `man` (manual-pag
 | `rm`    | delete a file (note: to delete a directory, add the option `-r` or `-d`)                                                                                                                                                               |
 | `cp`    | copy a file (note: to copy a directory you probably need to add an option (like `-r`))                                                                                                                                                 |
 | `mv`    | move a file or directory to a new location (note: this can also be useful for changing the name of a file/directory)                                                                                                                   |
-| `echo`  | print some text                                                                                                                                                                                                                        |
+| `echo`  | print some text; often used in conjunction with other commands                                                                                                                                                                         |
 | `cat`   | print the contents of the file                                                                                                                                                                                                         |
 | `>`     | this is an operator: `X > Y` will redirect (send) the outputs of command `X` to `Y`; if `Y` exists, it this will _overwrite_ the existing file.                                                                                        |
 | `>>`    | this is an operator similar to the above: `X >> Y` will send the outputs of command `X` to `Y`; if `Y` exists, it this will _append_ to the existing file.                                                                             |
