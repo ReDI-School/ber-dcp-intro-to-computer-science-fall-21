@@ -39,6 +39,15 @@ description = "Goals"
 
 ## Navigate file system and working with files & folders (demo) | 10-15 minutes
 
+### Why use the command line?
+
+- once familiar with it, faster and easier to navigate the file system
+- offers many powerful tools (especially, but not limited to, text and file manipulation)
+- possible to group together commands and automate repeatable workflows
+- helpful (often required) when working on virtual machines or infrastructure in the cloud
+
+### Demo
+
 Let's go through how to navigate the file system and work with files and folders. We will do this both via the command line using the commands listed in the cheat sheet below and then using the GUI (Graphical User Interface). Please refer to this cheat sheet when working through the exercises in groups later!
 
 ### Command Line cheat sheet
