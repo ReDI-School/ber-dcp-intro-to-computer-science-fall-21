@@ -14,12 +14,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/command/command_line_part2/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2021-09-14T12:27:41&#43;02:00" />
+<meta property="article:modified_time" content="2021-09-16T11:45:05&#43;02:00" />
 
 <meta itemprop="name" content="16/September/2021 - Command Line Basics Part 2">
 <meta itemprop="description" content="Goals">
-<meta itemprop="dateModified" content="2021-09-14T12:27:41&#43;02:00" />
-<meta itemprop="wordCount" content="83">
+<meta itemprop="dateModified" content="2021-09-16T11:45:05&#43;02:00" />
+<meta itemprop="wordCount" content="1630">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="16/September/2021 - Command Line Basics Part 2"/>
 <meta name="twitter:description" content="Goals"/>
@@ -133,6 +133,30 @@
         <h3 class="section_link active"><a id="docs-16september2021---command-line-basics-part-2" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/command/command_line_part2/">16/September/2021 - Command Line Basics Part 2</a></h3><nav id="TableOfContents">
   <ul>
     <li><a href="#pre-requisites">Pre Requisites</a></li>
+    <li><a href="#class-curriculum">Class Curriculum</a></li>
+    <li><a href="#useful-termsconcepts">Useful Terms/Concepts</a></li>
+    <li><a href="#navigate-file-system-and-working-with-files--folders-demo--10-15-minutes">Navigate file system and working with files &amp; folders (demo) | 10-15 minutes</a>
+      <ul>
+        <li><a href="#why-use-the-command-line">Why use the command line?</a></li>
+        <li><a href="#demo">Demo</a></li>
+        <li><a href="#command-line-cheat-sheet">Command Line cheat sheet</a></li>
+      </ul>
+    </li>
+    <li><a href="#quick-overview-of-package-managers">Quick overview of package managers</a></li>
+    <li><a href="#tasks-for-group-work">Tasks for group work</a>
+      <ul>
+        <li><a href="#0-open-a-terminal-window">0. Open a terminal window</a></li>
+        <li><a href="#1-move-to-the-parent-directory-and-back">1. Move to the parent directory and back</a></li>
+        <li><a href="#2-create-a-redi-folder">2. Create a redi folder</a></li>
+        <li><a href="#3-create-some-files">3. Create some files</a></li>
+        <li><a href="#4-move-these-files-into-a-new-directory">4. Move these files into a new directory</a></li>
+        <li><a href="#5-copy-files-and-directories">5. Copy files and directories</a></li>
+        <li><a href="#6-delete-files-and-directories">6. Delete files and directories</a></li>
+        <li><a href="#optional-7-additional-practice">(Optional) 7. Additional Practice</a></li>
+      </ul>
+    </li>
+    <li><a href="#extra-resources">Extra resources</a></li>
+    <li><a href="#next-class-preparation">Next class preparation</a></li>
   </ul>
 </nav>
       </section>
@@ -159,6 +183,279 @@
 <li>(Optional): watch this video on the <a href="https://www.youtube.com/watch?v=4RPtJ9UyHS0">history of keyboards and the command line interface</a></li>
 <li>(Optional - for Windows users only): <a href="https://cmder.net/">install the Cmder console emulator</a> (easier) or <a href="https://www.youtube.com/watch?v=LLlfLpvQg04">set up the windows subsystem for linux</a></li>
 </ul>
+<h2 id="class-curriculum">Class Curriculum</h2>
+<table>
+<thead>
+<tr>
+<th>Section content</th>
+<th>Expected time (mins)</th>
+<th>Pre - Requirements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kahoot</td>
+<td>15 minutes</td>
+<td>videos</td>
+</tr>
+<tr>
+<td>Questions from Kahoot + <a href="../command_line_part1">Session 1</a></td>
+<td>15 minutes</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Useful Terms/Concepts</td>
+<td>5-10 minutes</td>
+<td>videos</td>
+</tr>
+<tr>
+<td>Navigate file system and working with files &amp; folders (demo)</td>
+<td>10-15 minutes</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Quick overview of package managers</td>
+<td>5-10 minutes</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Class break</td>
+<td>10 minutes</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Command line practice in groups</td>
+<td>40-50 minutes</td>
+<td>local terminal OR repl.it account</td>
+</tr>
+<tr>
+<td>Summary &amp; Next class overview</td>
+<td>5 minutes</td>
+<td>❌</td>
+</tr>
+</tbody>
+</table>
+<h2 id="useful-termsconcepts">Useful Terms/Concepts</h2>
+<ul>
+<li><strong>File</strong>: data, usually organized according to some specific <em>file format</em> (e.g. <code>txt</code>, <code>mp3</code>, <code>docx</code>)</li>
+<li><strong>Directory</strong>: what we think of as a folder that contains files and other folders; in Linux systems, this is just a file that stores information about the length and location of other files, similar to a table of contents</li>
+<li><strong>File system</strong>: the part of an operating system that stores and keeps track of files</li>
+<li><strong>File permissions</strong>: define which users/groups are allowed to read/write/execute certain files. If a user has the following permissions, they can:
+<ul>
+<li><strong>Read</strong>: view the contents of the file</li>
+<li><strong>Write</strong>: modify the contents of the file</li>
+<li><strong>Execute</strong>: run the program (remember: programs are also treated as &quot;files&quot; in Linux systems and are permissioned using the same terms!)</li>
+</ul>
+</li>
+</ul>
+<h2 id="navigate-file-system-and-working-with-files--folders-demo--10-15-minutes">Navigate file system and working with files &amp; folders (demo) | 10-15 minutes</h2>
+<h3 id="why-use-the-command-line">Why use the command line?</h3>
+<ul>
+<li>once familiar with it, faster and easier to navigate the file system</li>
+<li>offers many powerful tools (especially, but not limited to, text and file manipulation)</li>
+<li>possible to group together commands and automate repeatable workflows</li>
+<li>helpful (often required) when working on virtual machines or infrastructure in the cloud</li>
+</ul>
+<h3 id="demo">Demo</h3>
+<p>Let's go through how to navigate the file system and work with files and folders. We will do this both via the command line using the commands listed in the cheat sheet below and then using the GUI (Graphical User Interface). Please refer to this cheat sheet when working through the exercises in groups later!</p>
+<h3 id="command-line-cheat-sheet">Command Line cheat sheet</h3>
+
+<div class="tip">
+  Remember that you can look up what a command does by using the <code>man</code> (manual-pages) command on Mac and Linux, or <code>help</code> command on Windows cmd. For example: <code>man echo</code> would give you information on what the <code>echo</code> command does and how to use it.
+</div>
+
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>what it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pwd</code></td>
+<td>print working directory (print the path to where I currently am in the file system)</td>
+</tr>
+<tr>
+<td><code>cd</code></td>
+<td>change directory (this moves you, the viewer of the terminal, to a new location in the file system). You may use an absolute file path or a relative path where <code>.</code> is the current working directory and <code>..</code> is the parent directory.</td>
+</tr>
+<tr>
+<td><code>ls</code></td>
+<td>list the contents of the directory</td>
+</tr>
+<tr>
+<td><code>mkdir</code></td>
+<td>make a directory</td>
+</tr>
+<tr>
+<td><code>touch</code></td>
+<td>create a new file</td>
+</tr>
+<tr>
+<td><code>rm</code></td>
+<td>delete a file (note: to delete a directory, add the option <code>-r</code> or <code>-d</code>)</td>
+</tr>
+<tr>
+<td><code>cp</code></td>
+<td>copy a file (note: to copy a directory you probably need to add an option (like <code>-r</code>))</td>
+</tr>
+<tr>
+<td><code>mv</code></td>
+<td>move a file or directory to a new location (note: this can also be useful for changing the name of a file/directory)</td>
+</tr>
+<tr>
+<td><code>echo</code></td>
+<td>print some text; often used in conjunction with other commands</td>
+</tr>
+<tr>
+<td><code>cat</code></td>
+<td>print the contents of the file</td>
+</tr>
+<tr>
+<td><code>&gt;</code></td>
+<td>this is an operator: <code>X &gt; Y</code> will redirect (send) the outputs of command <code>X</code> to <code>Y</code>; if <code>Y</code> exists, it this will <em>overwrite</em> the existing file.</td>
+</tr>
+<tr>
+<td><code>&gt;&gt;</code></td>
+<td>this is an operator similar to the above: <code>X &gt;&gt; Y</code> will send the outputs of command <code>X</code> to <code>Y</code>; if <code>Y</code> exists, it this will <em>append</em> to the existing file.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="quick-overview-of-package-managers">Quick overview of package managers</h2>
+
+<picture class="nav_logo" data-lit="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/images/linux-package-manager-explanation.webp" data-dark="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/images/linux-package-manager-explanation.webp">
+  <source srcset="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/images/linux-package-manager-explanation.webp" media="(prefers-color-scheme: dark)">
+  <img srcset="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/images/linux-package-manager-explanation.webp" alt="Linux package managers">
+</picture>
+
+<p>Packages are collections of files that are bundled together and can be installed and removed as a group</p>
+<p>Package managers allow you to:</p>
+<ul>
+<li>keep track of what software is installed</li>
+<li>easily install new software</li>
+<li>upgrade existing software to newer versions</li>
+<li>remove or uninstall software.</li>
+</ul>
+<p>There are different package managers available for different Operating Systems and Distributions. Here are some examples:</p>
+<ul>
+<li>
+<p>MacOS: homebrew, AppStore</p>
+</li>
+<li>
+<p>Windows: PackageManagement, Chocalatey...</p>
+
+<picture class="nav_logo" data-lit="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/images/windows-package-management.png" data-dark="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/images/windows-package-management.png">
+  <source srcset="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/images/windows-package-management.png" media="(prefers-color-scheme: dark)">
+  <img srcset="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/images/windows-package-management.png" alt="Windows package management">
+</picture>
+
+</li>
+<li>
+<p>Linux: <code>yum</code>, <code>apt-get</code>, <code>zypper</code></p>
+
+<picture class="nav_logo" data-lit="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/images/packages-by-distro.jpg" data-dark="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/images/packages-by-distro.jpg">
+  <source srcset="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/images/packages-by-distro.jpg" media="(prefers-color-scheme: dark)">
+  <img srcset="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/images/packages-by-distro.jpg" alt="Linux package managers">
+</picture>
+
+</li>
+</ul>
+<h2 id="tasks-for-group-work">Tasks for group work</h2>
+<p>Work through the tasks with your partner/group. We recommend that one of you shares your screen and you discuss as a group how to proceed with each of the tasks. Each group member should be following along. It is totally fine if you don't complete all the tasks; make sure you understand how to do each task and ask questions if anything does not make sense! Complete any remaining tasks for homework.</p>
+<h3 id="0-open-a-terminal-window">0. Open a terminal window</h3>
+<p>Open a terminal window or Repl, where you can practice using the command line.</p>
+<p>On Mac, you can do this by searching for &quot;Terminal&quot; in your Applications folder or using the keyboard shortcut &quot;Command + Space&quot; and then typing in &quot;Terminal&quot;.</p>
+<p>On Windows, open Cmder if you installed this as part of the prerequisites, or if you installed the Linux subsystem for windows, you can run WSL or follow the instructions described in the video. Alternatively, you can use Cygwin or the gitbash shell to practice Linux commands, or if nothing is available or working on your machine, please use Repl for today.</p>
+<p>If you are running into any challenges with this, reach out to one of the teachers.</p>
+<h3 id="1-move-to-the-parent-directory-and-back">1. Move to the parent directory and back</h3>
+<ul>
+<li>Print your working directory</li>
+<li>Move into the parent directory, if there is one.</li>
+<li>Move back into the directory you came from.</li>
+</ul>
+<p>Hint: if your original working directory path looked something like <code>folder1/folder2/folder3</code>, then for this task, you want to move to <code>folder1/folder2</code> and then back to <code>folder1/folder2/folder3</code>.</p>
+<h3 id="2-create-a-redi-folder">2. Create a redi folder</h3>
+<p>Let's create a folder to store the work from this session.</p>
+<ul>
+<li>Navigate to the place where you would like this folder to be located. The current working directory is fine, but you can also navigate to your desktop or another folder where you keep course work.</li>
+<li>Create a new directory (folder) titled <code>redi-2021-09-16</code></li>
+<li>Move into this new directory and print your working directory. Double check that your working directory now includes <code>redi-2021-09-16</code>.</li>
+</ul>
+<h3 id="3-create-some-files">3. Create some files</h3>
+<p>Now let's create some files to go in this new directory.</p>
+<ul>
+<li>
+<p>Create an empty file called &quot;test1.txt&quot; using the <code>touch</code> command.</p>
+</li>
+<li>
+<p>Create a second file called &quot;hello.txt&quot; which contains the phrase: &quot;hello, my name is YOUR_NAME_HERE!&quot;. (Replace YOUR_NAME_HERE with your name :)) Hint: use the <code>echo</code> command and the <code>&gt;</code> operator to do this.</p>
+</li>
+<li>
+<p>List the files that are in the directory, and make sure that it looks something like:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>test1.txt hello.txt
+</code></pre></div></li>
+<li>
+<p>Append the line &quot;How are you doing?&quot; to the file &quot;hello.txt&quot;</p>
+</li>
+<li>
+<p>Print the contents of the file and make sure that it looks something like:</p>
+<div class="highlight"><pre class="chroma"><code class="language-txt" data-lang="txt"><span class="ln">1</span>hello! my name is YOUR_NAME_HERE!
+<span class="ln">2</span>How are you doing?
+</code></pre></div></li>
+</ul>
+<h3 id="4-move-these-files-into-a-new-directory">4. Move these files into a new directory</h3>
+<p>Let's organize the directory that we are in by putting some of the files in a new location.</p>
+<ul>
+<li>Create a folder (directory) called <code>test-files</code> in the <code>redi-2021-09-16</code> folder</li>
+<li>List the contents of the directory that you are in and make sure that it looks something like:
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>test1.txt hello.txt test-files
+</code></pre></div></li>
+<li>Move <code>test1.txt</code> into the <code>test-files</code> directory.</li>
+<li>List the contents of <code>test-files</code> and make sure it contains only <code>test1.txt</code>, and list the contents of <code>redi-2021-09-16</code> to confirm that <code>test1.txt</code> has been moved.</li>
+</ul>
+<h3 id="5-copy-files-and-directories">5. Copy files and directories</h3>
+<ul>
+<li>Copy of <code>hello.txt</code> into the <code>test-files</code> directory. (Hint: this can be done in one command by copying the file to the proper location, or by creating a copy and then moving the file.)</li>
+<li>Rename the original <code>hello.txt</code> to <code>original-hello.txt</code>. (Hint: &quot;renaming&quot; is the same as moving a file to a new file path.)</li>
+<li>Make a copy of the <code>test-files</code> directory named <code>test-files-copy</code>.</li>
+<li>List the contents of <code>test-files-copy</code> and make sure that it contains both <code>test1.txt</code> and <code>original-hello.txt</code>.</li>
+</ul>
+<h3 id="6-delete-files-and-directories">6. Delete files and directories</h3>
+<p>Be careful with this one! Please double check the command with one of the teachers before removing anything, since <strong>anything removed via <code>rm</code> cannot be retrieved</strong>!!</p>
+<ul>
+<li>In the <code>test-files-copy</code>, delete the <code>test1.txt</code> file.</li>
+<li>Confirm that <code>test-files-copy</code> contains only <code>original-hello.txt</code>.</li>
+<li>Delete the entire <code>test-files-copy</code> directory.</li>
+<li>List the contents of the <code>redi-2021-09-16</code> directory and make sure that the <code>test-files-copy</code> directory is gone, but that the original <code>test-files</code> directory and other files are still present.</li>
+</ul>
+<h3 id="optional-7-additional-practice">(Optional) 7. Additional Practice</h3>
+<p>These are additional challenge tasks that are meant to be extra challenging, in case the previous tasks went by more quickly than expected! :)</p>
+<ul>
+<li>Use the man-pages and Google to understand how to use the <code>grep</code> command. Use this command to search for occurrences of the text &quot;my name is&quot; in the <code>redi-2021-09-16</code> directory. (Hint: you can use the <code>-r</code> option to do this)</li>
+<li>Create a journal/diary as a group with the following structure: the <code>journal</code> folder should contain <code>year</code> folders on the first level. Within a <code>year</code> folder are <code>month</code> folders, which contain text files for each individual day. A file path for one of these may look like: <code>.../journal/2021/09/16.txt</code>. Create a few entries that have some text!</li>
+<li>Take a look at some of the extra resources :)</li>
+</ul>
+<h2 id="extra-resources">Extra resources</h2>
+
+<div class="tip">
+  <ul>
+<li><a href="https://www.youtube.com/watch?v=460IxkYmZxQ">Linux Filesystem Hierarchy - Part 1</a></li>
+<li><a href="https://www.youtube.com/watch?v=WMaWG5ZRht4">Linux Filesystem Hierarchy - Part 2</a></li>
+<li><a href="https://www.youtube.com/watch?v=BFMyUgF6I8Y">Briana's Bash Tutorial: How to Use the Command Line in Linux, Windows, and Mac</a></li>
+<li><a href="https://www.digitalocean.com/community/tutorials/a-linux-command-line-primer">A linux command line primer</a></li>
+<li><a href="https://www.learnenough.com/command-line-tutorial/basics">Learn Enough Command Line to Be Dangerous</a></li>
+<li><a href="https://ryanstutorials.net/linuxtutorial/cheatsheet.php">Linux command line basic cheat sheet</a></li>
+<li><a href="https://www.freecodecamp.org/news/the-linux-commands-handbook/">The Linux Command Handbook</a></li>
+<li><a href="https://devopedia.org/package-manager">Package Managers</a></li>
+<li><a href="https://summarynetworks.com/ses/what-is-a-package-manager-in-linux/">What is a package manager in Linux</a></li>
+</ul>
+
+</div>
+
+<h2 id="next-class-preparation">Next class preparation</h2>
+<p>Coming soon!
+<a href="../../git" class="button mb-1 grid-4">Version Control with GIT</a></p>
 
     <div class="pager">
   
