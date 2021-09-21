@@ -6,8 +6,6 @@ description = "Goals"
 
 ![gif of computer](https://media.giphy.com/media/3oFzlWBadh6GNv3rdS/giphy.gif)
 
-## Pre Requisites
-
 ### 1. Install Git 💾
 
 First! Check if you already have git installed, open your command line and run:
