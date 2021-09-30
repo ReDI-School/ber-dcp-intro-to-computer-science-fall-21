@@ -121,10 +121,10 @@ Fork [this repository](https://github.com/ReDI-School/autumn-2021-intro-to-progr
 
 You should then be automatically taken to the main page of this repository. 
 
-On the upper right side, click `Code` (in green) and copy the `HTTPS` link. Then in your terminal run `git clone <link-you-copied>`. For example, this should look something like the following (with `github-username` replaced with your own github username):
+On the upper right side, click `Code` (in green) and copy the `SSH` link. Then in your terminal run `git clone <link-you-copied>`. For example, this should look something like the following:
 
 ```sh
-git clone https://github.com/ReDI-School/autumn-2021-intro-to-programming-md-journal
+git clone git@github.com:ReDI-School/autumn-2021-intro-to-programming-md-journal.git
 ```
 
 Check that this directory now exists. _(Hint: list the contents of the directory you are in, and make sure you see the cloned folder.)_
