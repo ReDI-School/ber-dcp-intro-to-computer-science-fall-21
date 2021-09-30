@@ -35,11 +35,10 @@ Review the content from last class. Make sure that have completed the prerequisi
 
 | Section content                          | Expected time (mins) | Pre - Requirements |
 | ---------------------------------------- | -------------------- | ------------------ |
-| Little quiz with Kahoot  | 10 minutes       | ❌             |
 | Learning Markdown | 20 minutes        |     ❌         |
 | Creating our own Journal in Github                 | 60 minutes             | VSCode installed  |
-| Working through git commands with our Journal                 | 20 minutes             | VSCode installed  |
-| Real life example                 | 10 minutes             | VSCode installed  |
+| Break | 10 minutes | |
+| Working through git commands with our Journal                 | 30 minutes             | VSCode installed  |
 
 ## Lesson Goals
 
