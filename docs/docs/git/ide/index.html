@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="dark">
 <head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Hugo 0.81.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Hugo 0.88.1" />
 <link rel="apple-touch-icon" sizes="180x180" href='https://redi-school.github.io/favicons/apple-touch-icon.png'>
 <link rel="icon" type="image/png" sizes="32x32" href='https://redi-school.github.io/favicons/favicon-32x32.png'>
 <link rel="icon" type="image/png" sizes="16x16" href='https://redi-school.github.io/favicons/favicon-16x16.png'>
@@ -14,12 +14,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/git/ide/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2021-09-29T15:13:52&#43;02:00" />
+<meta property="article:modified_time" content="2021-09-30T19:35:20+02:00" />
 
 <meta itemprop="name" content="30/September - Using an IDE (Integrated development environment)">
 <meta itemprop="description" content="Goals">
-<meta itemprop="dateModified" content="2021-09-29T15:13:52&#43;02:00" />
-<meta itemprop="wordCount" content="2072">
+<meta itemprop="dateModified" content="2021-09-30T19:35:20+02:00" />
+<meta itemprop="wordCount" content="2064">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="30/September - Using an IDE (Integrated development environment)"/>
 <meta name="twitter:description" content="Goals"/>
@@ -229,6 +229,32 @@
         <li><a href="#searching-for-text">Searching for text</a></li>
       </ul>
     </li>
+  </ul>
+</nav>
+      </section>
+  </section>
+  <section class="section aside_inner">
+    <h2 class="section_title"><a  href="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/web/" class="group">3 - Web development</a></h2>
+      <section class="" id="docs-3---web-development">
+        <h3 class="section_link"><a id="docs-04october---basic-knowledge-of-html" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/web/basic_html/">04/October - Basic knowledge of HTML</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#preparations">Preparations</a>
+      <ul>
+        <li><a href="#1-review-exercises-from-version-control-with-git-and-github-21september">1. Review exercises from Version Control with Git and GitHub (21/September)</a></li>
+        <li><a href="#2-review-exercises-from-using-an-ide-integrated-development-environment-30september">2. Review exercises from Using an IDE (Integrated development environment) (30/September)</a></li>
+        <li><a href="#3-read-through-the-following-html-tutorials-from-the-w3schools">3. Read through the following HTML tutorials from the W3Schools</a></li>
+        <li><a href="#4-watch-these-videos">4. Watch these Videos</a></li>
+        <li><a href="#5-html-class-practice-repository-on-github">5. HTML class practice repository on Github</a></li>
+      </ul>
+    </li>
+    <li><a href="#class-curriculum">Class Curriculum</a></li>
+    <li><a href="#lesson-goal">Lesson Goal</a></li>
+    <li><a href="#html---what-is-it">HTML - What is it?</a></li>
+    <li><a href="#structure-of-html-documents">Structure of HTML Documents</a></li>
+    <li><a href="#important-html-tags">Important HTML Tags</a></li>
+    <li><a href="#glossary">Glossary</a></li>
+    <li><a href="#extra-resources">Extra resources</a></li>
+    <li><a href="#next-class-preparation">Next class preparation</a></li>
   </ul>
 </nav>
       </section>
@@ -454,15 +480,15 @@
 <p>First, navigate to the directory where you want to clone the journal. (If you don't already have a designated folder for class materials, create a directory for this and navigate into it.) Cloning a repository means creating a local copy of another repository, usually one that is stored on a remote server like GitHub.</p>
 <p>Fork <a href="https://github.com/ReDI-School/autumn-2021-intro-to-programming-md-journal">this repository</a>. In the top right corner, click <code>Fork</code>. You may be prompted with a question like &quot;Where should we fork this repository to?&quot; If so, click your GitHub username; this will create a copy of the repository to your account.</p>
 <p>You should then be automatically taken to the main page of this repository.</p>
-<p>On the upper right side, click <code>Code</code> (in green) and copy the <code>HTTPS</code> link. Then in your terminal run <code>git clone &lt;link-you-copied&gt;</code>. For example, this should look something like the following (with <code>github-username</code> replaced with your own github username):</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="ln">1</span>git clone https://github.com/ReDI-School/autumn-2021-intro-to-programming-md-journal
+<p>On the upper right side, click <code>Code</code> (in green) and copy the <code>SSH</code> link. Then in your terminal run <code>git clone &lt;link-you-copied&gt;</code>. For example, this should look something like the following:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="ln">1</span>git clone git@github.com:ReDI-School/autumn-2021-intro-to-programming-md-journal.git
 </code></pre></div><p>Check that this directory now exists. <em>(Hint: list the contents of the directory you are in, and make sure you see the cloned folder.)</em></p>
 <p>Move into that directory (small hint -&gt; write <code>cd autumn</code> and then press the key <code>TAB</code> and it will autocomplete):</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="ln">1</span><span class="nb">cd</span> autumn-2021-intro-to-programming-md-journal
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="ln">1</span><span class="nb">cd</span> autumn-2021-intro-to-programming-md-journal
 </code></pre></div><p>Check the status of the git repository:</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="ln">1</span>git status
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="ln">1</span>git status
 </code></pre></div><p>You should see output something like:</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="ln">1</span>On branch main
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="ln">1</span>On branch main
 <span class="ln">2</span>Your branch is up to date with <span class="s1">&#39;origin/main&#39;</span>.
 <span class="ln">3</span>
 <span class="ln">4</span>nothing to commit, working tree clean
@@ -470,7 +496,7 @@
 <h3 id="2-checkout-a-new-branch">2. Checkout a new branch</h3>
 <p>One of the great things about Git is being able to work on the same repository as others at the same time. A typical way of doing this when working on a project is by creating and checking out a new branch (via <code>git checkout -b &lt;branch-name&gt;</code>), making changes and committing your work, and pushing this work to your separate branch. Once you are ready to publish your changes to the <code>main</code> branch, you can create a pull request (PR) to have others review your changes and merge them to the <code>main</code> branch.</p>
 <p>Even though you are working on your own repository alone (since you forked, this is your own repository), let's practice creating a new branch so we can make some changes there and eventually merge this back to the <code>main</code> branch. Let's call this branch <code>&lt;your-github-username&gt;/test-branch</code> (leave out the &lt;&gt;, for example, for me, I would call the branch <code>marcshaw/journal1</code>):</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="ln">1</span>git checkout -b &lt;your-github-username&gt;/test-branch
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="ln">1</span>git checkout -b &lt;your-github-username&gt;/test-branch
 </code></pre></div><p>Check the status of the repository again before moving on to the next step, and make sure that you are on the correct branch. <em>(Hint: run <code>git status</code> which displays the branch you are on, and make sure this is what you expect.)</em></p>
 <h3 id="3-open-with-vscode-the-folder-you-have-just-created">3. Open with VSCode the folder you have just created</h3>
 <p>Open VScode! :D once you are there let's click on file in the top left corner and click on <code>Open...</code>. Look for the the folder in your system you have just created (probably should be around <code>/home</code>) and click it.</p>
@@ -488,7 +514,7 @@
 </li>
 <li>
 <p>Create a commit now to &quot;save&quot; your changes--in this case, the deleted file. Try to leave a helpful commit message like below, replacing <name-of-file> with the file you deleted:</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="ln">1</span>git commit -m <span class="s2">&#34;Created my first journal!&#34;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="ln">1</span>git commit -m <span class="s2">&#34;Created my first journal!&#34;</span>
 </code></pre></div></li>
 <li>
 <p>Check that the commit was successful by checking the status of the repository (<code>git status</code>) and checking the log (<code>git log</code>). You should see the commit message that you added at the top of the log, in addition to some previous commits from before you cloned the repository.</p>
@@ -497,7 +523,7 @@
 <p>Let's go ahead and push these commits so far to the remote repository. Run the following, replacing <code>&lt;current-branch&gt;</code> with the branch you are working on (if you forget what it is called, you can run <code>git status</code> or <code>git branch</code> and copy the branch name from there!):</p>
 </li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="ln">1</span>git push origin &lt;current-branch&gt;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="ln">1</span>git push origin &lt;current-branch&gt;
 </code></pre></div><h3 id="6-create-a-pull-request-pr-on-github">6. Create a pull request (PR) on GitHub</h3>
 <p>As we did at the end of last class, let's create a pull request to merge this <code>test-branch</code> to <code>main</code>.</p>
 <p>Go to GitHub and view your branch: on the left side, there should be a button with <code>main</code> and a down arrow -- click this and select your branch. At the top, if there is an option to &quot;Pull request&quot;, click that, otherwise click on the &quot;Pull request&quot; tab and then &quot;New pull request&quot;.</p>

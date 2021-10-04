@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="dark">
 <head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Hugo 0.81.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Hugo 0.88.1" />
 <link rel="apple-touch-icon" sizes="180x180" href='https://redi-school.github.io/favicons/apple-touch-icon.png'>
 <link rel="icon" type="image/png" sizes="32x32" href='https://redi-school.github.io/favicons/favicon-32x32.png'>
 <link rel="icon" type="image/png" sizes="16x16" href='https://redi-school.github.io/favicons/favicon-16x16.png'>
@@ -14,11 +14,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/git/git_and_github/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2021-09-21T18:44:26&#43;02:00" />
+<meta property="article:modified_time" content="2021-09-21T18:44:26+02:00" />
 
 <meta itemprop="name" content="21/September - Version Control with Git and GitHub">
 <meta itemprop="description" content="Goals">
-<meta itemprop="dateModified" content="2021-09-21T18:44:26&#43;02:00" />
+<meta itemprop="dateModified" content="2021-09-21T18:44:26+02:00" />
 <meta itemprop="wordCount" content="1300">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="21/September - Version Control with Git and GitHub"/>
@@ -233,6 +233,32 @@
 </nav>
       </section>
   </section>
+  <section class="section aside_inner">
+    <h2 class="section_title"><a  href="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/web/" class="group">3 - Web development</a></h2>
+      <section class="" id="docs-3---web-development">
+        <h3 class="section_link"><a id="docs-04october---basic-knowledge-of-html" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/web/basic_html/">04/October - Basic knowledge of HTML</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#preparations">Preparations</a>
+      <ul>
+        <li><a href="#1-review-exercises-from-version-control-with-git-and-github-21september">1. Review exercises from Version Control with Git and GitHub (21/September)</a></li>
+        <li><a href="#2-review-exercises-from-using-an-ide-integrated-development-environment-30september">2. Review exercises from Using an IDE (Integrated development environment) (30/September)</a></li>
+        <li><a href="#3-read-through-the-following-html-tutorials-from-the-w3schools">3. Read through the following HTML tutorials from the W3Schools</a></li>
+        <li><a href="#4-watch-these-videos">4. Watch these Videos</a></li>
+        <li><a href="#5-html-class-practice-repository-on-github">5. HTML class practice repository on Github</a></li>
+      </ul>
+    </li>
+    <li><a href="#class-curriculum">Class Curriculum</a></li>
+    <li><a href="#lesson-goal">Lesson Goal</a></li>
+    <li><a href="#html---what-is-it">HTML - What is it?</a></li>
+    <li><a href="#structure-of-html-documents">Structure of HTML Documents</a></li>
+    <li><a href="#important-html-tags">Important HTML Tags</a></li>
+    <li><a href="#glossary">Glossary</a></li>
+    <li><a href="#extra-resources">Extra resources</a></li>
+    <li><a href="#next-class-preparation">Next class preparation</a></li>
+  </ul>
+</nav>
+      </section>
+  </section>
       </section>
   </section>
 </aside>
@@ -241,10 +267,10 @@
     <h1>21/September - Version Control with Git and GitHub</h1><p><img src="https://media.giphy.com/media/3oFzlWBadh6GNv3rdS/giphy.gif" alt="gif of computer"></p>
 <h3 id="1-install-git-">1. Install Git 💾</h3>
 <p>First! Check if you already have git installed, open your command line and run:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git --version
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git --version
 </code></pre></div><p>If you see something like the following output then you already have
 git installed:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git version 2.x.x
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git version 2.x.x
 </code></pre></div><p>Otherwise, here are instructions to install Git:</p>
 <ul>
 <li><a href="https://github.com/git-guides/install-git#install-git-on-windows">For Windows</a></li>
@@ -335,31 +361,31 @@ by <a href="https://codebar.io/">CodeBar</a>.</p>
 <h2 id="1-create-a-local-repository">1. Create a local repository</h2>
 <p>First, create a new directory and give it the same name as your GitHub username (the reason for this will become
 clear later):</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>mkdir &lt;github-username&gt;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>mkdir &lt;github-username&gt;
 </code></pre></div><p>Move into that directory</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span><span class="nb">cd</span> &lt;github-username&gt;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span><span class="nb">cd</span> &lt;github-username&gt;
 </code></pre></div><p>Initialise an empty git repository with the branch name, <code>main</code>:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git init -b main
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git init -b main
 </code></pre></div><p>Now you have an empty local repository 🎉</p>
 <h2 id="2-make-a-commit">2. Make a commit</h2>
 <p>Next, we want to make changes within this repository and save (or commit!) them.</p>
 <p>A commit is a way to save changes you’ve made to a repository. It is <strong>powerful</strong> because
 it allows you to keep snapshots of your repository at any given time.</p>
 <p>First, we create a new file:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>touch README.md
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>touch README.md
 </code></pre></div><p>This is a <a href="https://en.wikipedia.org/wiki/README">README</a> file using <a href="https://en.wikipedia.org/wiki/Markdown">markdown</a> syntax.</p>
 <p>Next, we will add some text to this file to say hello to the world.</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span><span class="nb">echo</span> <span class="s2">&#34;# Hello, my name is &lt;your name&gt; :)&#34;</span> &gt; README.md
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span><span class="nb">echo</span> <span class="s2">&#34;# Hello, my name is &lt;your name&gt; :)&#34;</span> &gt; README.md
 </code></pre></div><p>Then view the status of the current git repository:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git status
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git status
 </code></pre></div><p>The README.md file will appear in the untracked files. We want to track this file and
 add it to the staging area so it will be included in the next commit:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git add .
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git add .
 </code></pre></div><p>Then check the <code>status</code> again.</p>
 <p>Let's commit this file with a helpful commit message:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git commit -m <span class="s2">&#34;Initialise repository with a README&#34;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git commit -m <span class="s2">&#34;Initialise repository with a README&#34;</span>
 </code></pre></div><p>Finally, we can take a look at the log, to view metadata about our previous commits:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git log
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git log
 </code></pre></div><h2 id="3-create-a-remote-repository-on-github">3. Create a remote repository (on GitHub)</h2>
 <p>Sign in to GitHub: <a href="https://github.com">https://github.com</a></p>
 <p>On the top navigation bar, click the <code>+</code> button and select ‘New repository’</p>
@@ -369,14 +395,14 @@ then click ‘Create repository’.</p>
 <p>Now we want to associate our local repository with the one we have created on GitHub
 and push the contents of our local repository to GitHub.</p>
 <p>Connect the local repository with the remote repository:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git remote add origin https://github.com/&lt;user&gt;/&lt;repo&gt;.git
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git remote add origin https://github.com/&lt;user&gt;/&lt;repo&gt;.git
 </code></pre></div><p>Verify that the remote was added:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git remote -v
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git remote -v
 </code></pre></div><p>You should see the following output:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>origin	https://github.com/&lt;user&gt;/&lt;repo&gt;.git <span class="o">(</span>fetch<span class="o">)</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>origin	https://github.com/&lt;user&gt;/&lt;repo&gt;.git <span class="o">(</span>fetch<span class="o">)</span>
 <span class="ln">2</span>origin	https://github.com/&lt;user&gt;/&lt;repo&gt;.git <span class="o">(</span>push<span class="o">)</span>
 </code></pre></div><p>Finally push your changes to GitHub:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git push -u origin main
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git push -u origin main
 </code></pre></div><p>Check your GitHub repository to see if it contains your README file, and look at your profile
 to see that it is displayed!</p>
 <p>Well done on sharing your first repository 🎉</p>
@@ -384,20 +410,20 @@ to see that it is displayed!</p>
 <p>Now we want to make some changes to our README, but we don't want to commit them to the <code>main</code>
 branch yet. Therefore, we will use another branch.</p>
 <p>Create a new branch, called ‘add-more-detail’:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git checkout -b add-more-detail
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git checkout -b add-more-detail
 </code></pre></div><p>Open the <code>README.md</code> file in a text editor (e.g. Notepad or TextEdit) and make some changes.
 Here is a template you can use:</p>
-<div class="highlight"><pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="ln">1</span><span class="gh"># Hello, my name is &lt;your name&gt; 👋
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="ln">1</span><span class="gh"># Hello, my name is &lt;your name&gt; 👋
 </span><span class="ln">2</span><span class="gh"></span>
 <span class="ln">3</span>Pronouns: <span class="p">&lt;</span><span class="nt">your</span> <span class="na">pronouns</span><span class="p">&gt;</span>
 <span class="ln">4</span>Learning: command line, Git, HTML, CSS, Javascript, Python
 <span class="ln">5</span>Interests: <span class="p">&lt;</span><span class="nt">your</span> <span class="na">interests</span><span class="p">&gt;</span>
 </code></pre></div><p>You can be as creative as you want by adding text, emoji, images or gifs (and more!).</p>
 <p>Once you have made some changes it is time to add and commit them:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git add .
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git add .
 <span class="ln">2</span>git commit -m <span class="s2">&#34;Add some new information&#34;</span>
 </code></pre></div><p>Then push the branch with the changes to the remote repository:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git push origin add-more-detail
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git push origin add-more-detail
 </code></pre></div><p>Take a look at your README profile - has it been updated?</p>
 <h2 id="6-create-a-pull-request">6. Create a pull request</h2>
 <p>Let's say we want to get feedback on the changes we've made. We can do this with a
@@ -418,7 +444,7 @@ is updated with your changes.</p>
 <p>On your pull request, go to the bottom of the page and select <code>Rebase and merge</code>.</p>
 <p>You can now go to your command line, <code>checkout</code> the main branch and <code>pull</code> the changes
 so that your local main branch is up to date:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git checkout main
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git checkout main
 <span class="ln">2</span>git pull origin main
 </code></pre></div><p>Finally, take a look at your updated GitHub profile README and celebrate what you've achieved!</p>
 <p><img src="https://media.giphy.com/media/l378qdC4yO0YEv5Re/giphy.gif" alt="celebrate"></p>
@@ -433,7 +459,7 @@ fork to build on someone else's work.</p>
 <p>Once you have forked the repository, we can <code>clone</code> it to download a copy of the
 repository to your local machine. On the repository, select <code>Code</code> and copy the <code>HTTPS</code>
 link. Then navigate to your terminal and run:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git clone https://github.com/&lt;user&gt;/&lt;repo&gt;.git
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git clone https://github.com/&lt;user&gt;/&lt;repo&gt;.git
 </code></pre></div><h2 id="8-follow-up-activity-make-improvements-to-your-github-profile-readme">8. Follow-up activity: make improvements to your GitHub Profile README</h2>
 <p>There are plenty of wonderful examples out there, take a look at the examples in this
 repository for inspiration: <a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme">https://github.com/abhisheknaiidu/awesome-github-profile-readme</a></p>
