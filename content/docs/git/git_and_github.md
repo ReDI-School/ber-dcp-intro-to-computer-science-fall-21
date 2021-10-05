@@ -97,7 +97,11 @@ cd <github-username>
 Initialise an empty git repository with the branch name, `main`:
 
 ```shell
-git init -b main
+git init
+```
+
+```shell
+git checkout -b main
 ```
 
 Now you have an empty local repository 🎉
