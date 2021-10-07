@@ -1,5 +1,5 @@
 +++
-title = "7/October - Basic knowledge of CSS (Cascading Style Sheet)"
+title = "07/October - Basic knowledge of CSS (Cascading Style Sheet)"
 description = "Goals"
 weight = 20
 +++
@@ -155,7 +155,12 @@ Like classes, we can also use IDs to select HTML elements and apply styling to t
 
 ## Activities
 
-1. Add a style sheet to the journal you were working on previously, and change the colors, fonts, etc. of your journal. Be creative here! Make sure to commit and push the changes to your repository afterwards.
+1. Add a style sheet to the journal you were working on previously, and change the colors, fonts, etc. of your journal. Be creative here! Make sure to commit and push the changes to your repository afterwards. Some example tasks:
+
+   - Change the color and font size of all of the h1 (large heading) tags (hint: use element selection)
+   - Create several CSS classes to style the color, font, font size, background color, and alignment of text. Apply these classes to several elements of your journal.
+   - Create an "id" to select a particular paragraph or div in your journal and style (i.e. change the color or background of the paragraph or div).
+
 2. (optional - it's ok if you don't get to this task!) Spend some time working through [Grid Garden](https://cssgridgarden.com/) with your partner.
 3. (optional - it's ok if you don't get to this task!)Spend some time working through [CSS Diner](https://flukeout.github.io/) with your partner.
 
