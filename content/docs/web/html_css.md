@@ -4,7 +4,7 @@ description = "Goals"
 weight = 30
 +++
 
-![html-intro-image](http://www.gdiannarbor.com/events/inter-html-css/images/responsive-design.png)
+{{< picture "html_tag_image.jpg" "html_tag_image.jpg" "HTML tag image" >}}
 
 ## Prerequisites
 
