@@ -34,5 +34,14 @@ Review Version Control with Git and GitHub: 21/September 2. Review exercises fro
       <description>Prerequisites  Review the CSS course content, and watch this video (if you haven&#39;t already): Learn CSS in 20 Minutes Review the HTML course content, check out this video (start at 7:30 and end at 49:35 unless you&#39;d like to learn about semantic tags :-) ) Decide who to build a website for (you? your pet? someone else?). Pick a simple background image for your website. You can choose a landscape photo you’ve taken or search for images that are free to use e.</description>
     </item>
     
+    <item>
+      <title>14/October - Basic knowledge of Javascript</title>
+      <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/web/basic_js/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/web/basic_js/</guid>
+      <description>Preparations  A short intro to JavaScript Detailed video from AmigosCode starting from Beginners going all the way to advanced - watch from 12:15 till 56:23 and from 1:10:15 till 1:16:03 📚 An intro to JavaScript from Mozilla A small number guessing game   Class Curriculum    Section content Expected time (mins) Pre - Requirements     Lesson Agenda and Goals 5 minutes ❌   Live demo on basic JS 45 minutes Preparations section   Review of the Activity task as a whole class 10 minutes ❌   Class break 10 minutes ❌   JS Activity (in smaller groups) 45-60 minutes VsCode and Git installed    Lesson Goal To gain familiarity with what JavaScript is, what it can do, and how it fits into a web site.</description>
+    </item>
+    
   </channel>
 </rss>
