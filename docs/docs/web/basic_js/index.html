@@ -14,12 +14,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/web/basic_js/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2021-09-14T12:27:41+02:00" />
+<meta property="article:modified_time" content="2021-10-16T14:07:22+02:00" />
 
 <meta itemprop="name" content="14/October - Basic knowledge of Javascript">
 <meta itemprop="description" content="To gain familiarity with what JavaScript is, what it can do, and how it fits into a web site.">
-<meta itemprop="dateModified" content="2021-09-14T12:27:41+02:00" />
-<meta itemprop="wordCount" content="2479">
+<meta itemprop="dateModified" content="2021-10-16T14:07:22+02:00" />
+<meta itemprop="wordCount" content="2704">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="14/October - Basic knowledge of Javascript"/>
 <meta name="twitter:description" content="To gain familiarity with what JavaScript is, what it can do, and how it fits into a web site."/>
@@ -323,7 +323,17 @@
     <li><a href="#what-can-javascript-do">What can JavaScript do</a></li>
     <li><a href="#how-do-you-add-javascript-to-your-page">How do you add JavaScript to your page</a></li>
     <li><a href="#ways-of-loading-js-scripts">Ways of loading JS scripts</a></li>
-    <li><a href="#basic-js-guide">Basic JS Guide</a></li>
+    <li><a href="#basic-js-guide">Basic JS Guide</a>
+      <ul>
+        <li><a href="#functions">Functions</a></li>
+        <li><a href="#variables">Variables</a></li>
+        <li><a href="#data-types">Data Types</a></li>
+        <li><a href="#operators">Operators</a></li>
+        <li><a href="#comments">Comments</a></li>
+        <li><a href="#ifelse-statement">If...else statement</a></li>
+        <li><a href="#events">Events</a></li>
+      </ul>
+    </li>
     <li><a href="#activity">Activity</a></li>
     <li><a href="#extra-resources">Extra resources</a></li>
     <li><a href="#next-class-preparation">Next class preparation</a></li>
@@ -495,9 +505,7 @@
 <li>If your scripts need to wait for parsing and depend on other scripts and/or the DOM being in place, load them using defer and put their corresponding <code>&lt;script&gt;</code> elements in the order you want the browser to execute them.</li>
 </ol>
 <h2 id="basic-js-guide">Basic JS Guide</h2>
-<ol>
-<li>Functions</li>
-</ol>
+<h3 id="functions">Functions</h3>
 <p>JavaScript functions are named pieces of code which can be used to achieve a particular functionality. For example, in order to show up a pop-up with the text <code>Hello World!</code>, the following snippet of code can be used</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Hello World!&#39;</span><span class="p">);</span>
 </code></pre></div><p>Here <a href="https://www.w3schools.com/jsref/met_win_alert.asp">alert</a> is a function or piece of code available when you use JavaScript in a normal browser window. A function is called or executed by adding an opening and closing parantheses <code>()</code> after the name of the function. If the function takes any parameters, those are specified between the parantheses. Calling a function could change the state of the system (e.g. show a pop-up using <code>alert</code>) or simply return a value (e.g. return a random number between 0 and 1 in the case of <a href="https://www.w3schools.com/js/js_random.asp">Math.random</a>).</p>
@@ -514,9 +522,7 @@
 <span class="ln">6</span><span class="c1">// Calling the function and printing the value.
 </span><span class="ln">7</span><span class="c1">// This statement should print the value 8
 </span><span class="ln">8</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sum</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">));</span>
-</code></pre></div><ol start="2">
-<li>Variables</li>
-</ol>
+</code></pre></div><h3 id="variables">Variables</h3>
 <p>Variables are named memory locations where you can store some data. Think of variables as similar to labeled boxes which can store data.</p>
 <p>Variables can be declared using the <code>let</code> or <code>var</code> keywords. The difference between the two is where the declared variable remains accessible or valid. A variable declared using <code>var</code> can be accessed anywhere in the program. However the validity or accessibility of a variable declared using <code>let</code> is limited to the scope (between the curly brackets) where it is defined.</p>
 <p>If the value of a variable does not need to change once it's assigned, you can use the <code>const</code> keyword to declare the variable.</p>
@@ -538,9 +544,7 @@
 </code></pre></div><ul>
 <li>To avoid having to call the same function many times. Calling a function is expensive (i.e. it takes time to execute) but getting the value stored in a variable is cheap.</li>
 </ul>
-<ol start="3">
-<li>Data Types</li>
-</ol>
+<h3 id="data-types">Data Types</h3>
 <p>Variables can contain different types of values and data types. Below is a code snippet showing the simple or primitive types</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="ln"> 1</span><span class="c1">// Any type of numerical data belongs to the Number data type
 </span><span class="ln"> 2</span><span class="c1"></span><span class="kd">let</span> <span class="nx">age</span> <span class="o">=</span> <span class="mi">23</span><span class="p">;</span>
@@ -589,9 +593,7 @@
 </span><span class="ln">19</span><span class="c1">// This way of accessing properties is called the Dot notation
 </span><span class="ln">20</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">person</span><span class="p">.</span><span class="nx">age</span><span class="p">)</span>
 </code></pre></div><p>As can be seen above, holding the data in objects makes it easier to define and access this data.</p>
-<ol start="4">
-<li>Operators</li>
-</ol>
+<h3 id="operators">Operators</h3>
 <p>If you have variables, you can use them to perform different kinds of operations. To do so, you need operators.
 <section class="grid-3"  >
 
@@ -628,9 +630,7 @@
 
 </section>
 </p>
-<ol start="5">
-<li>Comments</li>
-</ol>
+<h3 id="comments">Comments</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="cm">/*
 </span><span class="ln">2</span><span class="cm">    Comments are important because they help other people understand 
 </span><span class="ln">3</span><span class="cm">    what is going on in your code.
@@ -640,9 +640,7 @@
 </span><span class="ln">7</span><span class="cm">*/</span>
 <span class="ln">8</span>
 <span class="ln">9</span><span class="c1">// This is a single line comment
-</span></code></pre></div><ol start="6">
-<li>If...else statement</li>
-</ol>
+</span></code></pre></div><h3 id="ifelse-statement">If...else statement</h3>
 <p>Let's say you have to ask an input from the user and show a pop-up window which says &quot;Equal to 50&quot;, &quot;Less than 50&quot; or &quot;Greater than 50&quot; depending on the value entered by the user. This requires making a decision based on the value entered by the user. This is where you can use an if...else statement.</p>
 <p>A simple if statement is shown below. The condition can be a variable or any expression which is a boolean data type. The code inside the curly braces is evaluated only if the value of the boolean expression is <code>true</code>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="ln"> 1</span><span class="k">if</span> <span class="p">(</span><span class="nx">condition</span><span class="p">)</span> <span class="p">{</span>
@@ -694,6 +692,37 @@
 <span class="ln">15</span><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
 <span class="ln">16</span>    <span class="nx">alert</span><span class="p">(</span><span class="s2">&#34;Greater than 50&#34;</span><span class="p">);</span>
 <span class="ln">17</span><span class="p">}</span>
+</code></pre></div><h3 id="events">Events</h3>
+<p>HTML events are &quot;things&quot; that happen to HTML elements.</p>
+<p>When JavaScript is used in HTML pages, JavaScript can &quot;react&quot; on these events.</p>
+<p>An HTML event can be something the browser does, or something a user does.</p>
+<p>Here are some examples of HTML events:</p>
+<ul>
+<li>An HTML web page has finished loading</li>
+<li>An HTML input field was changed</li>
+<li>An HTML button was clicked</li>
+</ul>
+<p>Often, when events happen, you may want to do something.</p>
+<p>JavaScript lets you execute code when events are detected.</p>
+<p>You can specify what code to execute by using the <a href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onmouseover_addeventlistener">addEventListener</a> method of an element.
+The below snippet shows how to handle a click event on a button to show a popup.
+The first parameter to <code>addEventListener</code> is the type of event.
+Here since we want to respond to someone clicking on the button, the event type is <code>click</code>.
+The second parameter is the actual code to execute.
+This could be provided as a function declaration inline or as the name of a function declared elsewhere.
+The code or function which is called is referred to as the <code>event handler</code>, since it handles the event in some way.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="ln">1</span><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;show_popup&#34;</span><span class="p">&gt;</span>Show popup<span class="p">&lt;/</span><span class="nt">input</span><span class="p">&gt;</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="ln"> 1</span><span class="kd">var</span> <span class="nx">btn</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;show_popup&#39;</span><span class="p">);</span>
+<span class="ln"> 2</span><span class="nx">btn</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;click&#34;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<span class="ln"> 3</span>    <span class="nx">alert</span><span class="p">(</span><span class="s2">&#34;Here&#39;s a popup&#34;</span><span class="p">);</span>
+<span class="ln"> 4</span><span class="p">});</span>
+<span class="ln"> 5</span>
+<span class="ln"> 6</span><span class="c1">// Alternative way of specifying the event handler
+</span><span class="ln"> 7</span><span class="c1"></span><span class="nx">btn</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;click&#34;</span><span class="p">,</span> <span class="nx">showPopup</span><span class="p">);</span>
+<span class="ln"> 8</span>
+<span class="ln"> 9</span><span class="kd">function</span> <span class="nx">showPopup</span><span class="p">()</span> <span class="p">{</span>
+<span class="ln">10</span>    <span class="nx">alert</span><span class="p">(</span><span class="s2">&#34;Here&#39;s a popup&#34;</span><span class="p">);</span>
+<span class="ln">11</span><span class="p">}</span>
 </code></pre></div><h2 id="activity">Activity</h2>
 <p>Try to create the guessing game mentioned in <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/A_first_splash">this link</a>. You can fork the code <a href="https://github.com/ReDI-School/guessing-game">on this repo</a> to get started.</p>
 <h2 id="extra-resources">Extra resources</h2>

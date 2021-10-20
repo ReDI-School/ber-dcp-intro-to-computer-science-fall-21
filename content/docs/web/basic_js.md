@@ -159,7 +159,7 @@ There are typically 3 ways we do that to include JS in a HTML Page ( just like C
 
 ## Basic JS Guide
 
-1. Functions
+### Functions
 
 JavaScript functions are named pieces of code which can be used to achieve a particular functionality. For example, in order to show up a pop-up with the text `Hello World!`, the following snippet of code can be used
 
@@ -190,7 +190,7 @@ function sum(a, b) {
 console.log(sum(3,5));
 ```
 
-2. Variables
+### Variables
 
 Variables are named memory locations where you can store some data. Think of variables as similar to labeled boxes which can store data.
 
@@ -218,7 +218,7 @@ There are several reasons you might want to use variables:
  ```
  - To avoid having to call the same function many times. Calling a function is expensive (i.e. it takes time to execute) but getting the value stored in a variable is cheap.
 
-3. Data Types
+### Data Types
 
 Variables can contain different types of values and data types. Below is a code snippet showing the simple or primitive types
 
@@ -286,7 +286,7 @@ console.log(person.age)
 
 As can be seen above, holding the data in objects makes it easier to define and access this data.
 
-4. Operators
+### Operators
 
 If you have variables, you can use them to perform different kinds of operations. To do so, you need operators.
 {{< block "grid-3" >}}
@@ -330,7 +330,7 @@ Logical
 {{< /column >}}
 {{< /block >}}
 
-5. Comments
+### Comments
 
 ```js
 /*
@@ -344,7 +344,7 @@ Logical
 // This is a single line comment
 ```
 
-6. If...else statement
+### If...else statement
 
 Let's say you have to ask an input from the user and show a pop-up window which says "Equal to 50", "Less than 50" or "Greater than 50" depending on the value entered by the user. This requires making a decision based on the value entered by the user. This is where you can use an if...else statement. 
 
@@ -411,6 +411,50 @@ if (num === 50) {
     alert("Less than 50");
 } else {
     alert("Greater than 50");
+}
+```
+
+### Events
+
+HTML events are "things" that happen to HTML elements.
+
+When JavaScript is used in HTML pages, JavaScript can "react" on these events.
+
+An HTML event can be something the browser does, or something a user does.
+
+Here are some examples of HTML events:
+
+- An HTML web page has finished loading
+- An HTML input field was changed
+- An HTML button was clicked
+
+Often, when events happen, you may want to do something.
+
+JavaScript lets you execute code when events are detected.
+
+You can specify what code to execute by using the [addEventListener](https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onmouseover_addeventlistener) method of an element.
+The below snippet shows how to handle a click event on a button to show a popup.
+The first parameter to `addEventListener` is the type of event.
+Here since we want to respond to someone clicking on the button, the event type is `click`.
+The second parameter is the actual code to execute.
+This could be provided as a function declaration inline or as the name of a function declared elsewhere.
+The code or function which is called is referred to as the `event handler`, since it handles the event in some way.
+
+```html
+<input type="button" id="show_popup">Show popup</input>
+```
+
+```js
+var btn = document.getElementById('show_popup');
+btn.addEventListener("click", function() {
+    alert("Here's a popup");
+});
+
+// Alternative way of specifying the event handler
+btn.addEventListener("click", showPopup);
+
+function showPopup() {
+    alert("Here's a popup");
 }
 ```
 
