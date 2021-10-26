@@ -222,8 +222,8 @@ A Solution:
 def hello_world():
     print("Hello, World!")
 
-# Let's call the function and print this
-print(hello_world())
+# Let's call the function
+hello_world()
 ```
 
 ### Task 2: create a function that returns the string "Hello, World!". Call this function and print the output.
@@ -250,7 +250,7 @@ A solution:
 
 ```python
 def hello_world(name):
-    return ("Hello,", name)
+    return ("Hello, " + name)
 
 print(hello_world("Noor"))
 # output -> "Hello, Noor"
@@ -262,7 +262,7 @@ Another solution:
 
 ```python
 def hello_world(name):
-    print("Hello,", name)
+    print("Hello, " + name)
 
 hello_world("Noor")
 # output -> "Hello, Noor"
