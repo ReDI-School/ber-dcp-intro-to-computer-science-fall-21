@@ -14,12 +14,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/python/intro_to_python/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2021-09-14T12:27:41+02:00" />
+<meta property="article:modified_time" content="2021-10-26T19:01:47+02:00" />
 
 <meta itemprop="name" content="26/October - Introduction to Python">
 <meta itemprop="description" content="Goals">
-<meta itemprop="dateModified" content="2021-09-14T12:27:41+02:00" />
-<meta itemprop="wordCount" content="1732">
+<meta itemprop="dateModified" content="2021-10-26T19:01:47+02:00" />
+<meta itemprop="wordCount" content="1733">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="26/October - Introduction to Python"/>
 <meta name="twitter:description" content="Goals"/>
@@ -618,8 +618,8 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">def</span> <span class="nf">hello_world</span><span class="p">():</span>
 <span class="ln">2</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello, World!&#34;</span><span class="p">)</span>
 <span class="ln">3</span>
-<span class="ln">4</span><span class="c1"># Let&#39;s call the function and print this</span>
-<span class="ln">5</span><span class="nb">print</span><span class="p">(</span><span class="n">hello_world</span><span class="p">())</span>
+<span class="ln">4</span><span class="c1"># Let&#39;s call the function</span>
+<span class="ln">5</span><span class="n">hello_world</span><span class="p">()</span>
 </code></pre></div><h3 id="task-2-create-a-function-that-returns-the-string-hello-world-call-this-function-and-print-the-output">Task 2: create a function that returns the string &quot;Hello, World!&quot;. Call this function and print the output.</h3>
 <p>A solution:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">def</span> <span class="nf">hello_world</span><span class="p">():</span>
@@ -632,7 +632,7 @@
 <span class="ln">2</span><span class="c1"># expected output -&gt; &#34;Hello, Noor&#34;</span>
 </code></pre></div><p>A solution:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">def</span> <span class="nf">hello_world</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
-<span class="ln">2</span>    <span class="k">return</span> <span class="p">(</span><span class="s2">&#34;Hello,&#34;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+<span class="ln">2</span>    <span class="k">return</span> <span class="p">(</span><span class="s2">&#34;Hello, &#34;</span> <span class="o">+</span> <span class="n">name</span><span class="p">)</span>
 <span class="ln">3</span>
 <span class="ln">4</span><span class="nb">print</span><span class="p">(</span><span class="n">hello_world</span><span class="p">(</span><span class="s2">&#34;Noor&#34;</span><span class="p">))</span>
 <span class="ln">5</span><span class="c1"># output -&gt; &#34;Hello, Noor&#34;</span>
@@ -640,7 +640,7 @@
 <span class="ln">7</span><span class="c1"># output -&gt; &#34;Hello, Jose&#34;</span>
 </code></pre></div><p>Another solution:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">def</span> <span class="nf">hello_world</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
-<span class="ln">2</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello,&#34;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+<span class="ln">2</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello, &#34;</span> <span class="o">+</span> <span class="n">name</span><span class="p">)</span>
 <span class="ln">3</span>
 <span class="ln">4</span><span class="n">hello_world</span><span class="p">(</span><span class="s2">&#34;Noor&#34;</span><span class="p">)</span>
 <span class="ln">5</span><span class="c1"># output -&gt; &#34;Hello, Noor&#34;</span>
