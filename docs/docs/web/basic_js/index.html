@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="dark">
 <head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Hugo 0.88.1" />
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Hugo 0.81.0" />
 <link rel="apple-touch-icon" sizes="180x180" href='https://redi-school.github.io/favicons/apple-touch-icon.png'>
 <link rel="icon" type="image/png" sizes="32x32" href='https://redi-school.github.io/favicons/favicon-32x32.png'>
 <link rel="icon" type="image/png" sizes="16x16" href='https://redi-school.github.io/favicons/favicon-16x16.png'>
@@ -14,11 +14,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/web/basic_js/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2021-10-20T21:11:47+02:00" />
+<meta property="article:modified_time" content="2021-10-20T21:11:47&#43;02:00" />
 
 <meta itemprop="name" content="14/October - Basic knowledge of Javascript">
 <meta itemprop="description" content="To gain familiarity with what JavaScript is, what it can do, and how it fits into a web site.">
-<meta itemprop="dateModified" content="2021-10-20T21:11:47+02:00" />
+<meta itemprop="dateModified" content="2021-10-20T21:11:47&#43;02:00" />
 <meta itemprop="wordCount" content="2704">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="14/October - Basic knowledge of Javascript"/>
@@ -378,6 +378,9 @@
 </nav>
       </section>
   </section>
+  <section class="section aside_inner">
+    <h2 class="section_title"><a  href="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/references/" class="group">References &amp; Cheat Sheets</a></h2>
+  </section>
       </section>
   </section>
 </aside>
@@ -433,7 +436,7 @@
 <p>To gain familiarity with what JavaScript is, what it can do, and how it fits into a web site.</p>
 <h2 id="hint-about-using-code-snippets">Hint about using code snippets</h2>
 <p>Code snippets look like the box below. Please note that the full contents of the snippet are hidden if there's a lot of code. In this case, please click on the 3 dots at the bottom-left of the box to expand it and see the full code.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="ln"> 1</span><span class="cm">/*
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln"> 1</span><span class="cm">/*
 </span><span class="ln"> 2</span><span class="cm">This code snippet
 </span><span class="ln"> 3</span><span class="cm">is
 </span><span class="ln"> 4</span><span class="cm">
@@ -461,16 +464,16 @@
 </div>
 
 
-<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="ln">1</span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Player 1: Chris<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="ln">1</span><span class="nt">p</span> <span class="p">{</span>
+<div><div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="ln">1</span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Player 1: Chris<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="ln">1</span><span class="nt">p</span> <span class="p">{</span>
 <span class="ln">2</span>  <span class="k">font-family</span><span class="p">:</span> <span class="s1">&#39;helvetica neue&#39;</span><span class="p">,</span> <span class="n">helvetica</span><span class="p">,</span> <span class="kc">sans-serif</span><span class="p">;</span>
 <span class="ln">3</span>  <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
 <span class="ln">4</span>  <span class="k">border</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="kc">solid</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">200</span><span class="p">,</span><span class="mf">0.6</span><span class="p">);</span>
 <span class="ln">5</span>  <span class="k">color</span><span class="p">:</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">200</span><span class="p">,</span><span class="mf">0.6</span><span class="p">);</span>
-<span class="ln">6</span>  <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
+<span class="ln">6</span>  <span class="k">display</span><span class="p">:</span> <span class="kc">inline</span><span class="o">-</span><span class="kc">block</span><span class="p">;</span>
 <span class="ln">7</span>  <span class="k">cursor</span><span class="p">:</span> <span class="kc">pointer</span><span class="p">;</span>
 <span class="ln">8</span><span class="p">}</span>
-</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="kr">const</span> <span class="nx">para</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">);</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="kr">const</span> <span class="nx">para</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">);</span>
 <span class="ln">2</span>
 <span class="ln">3</span><span class="nx">para</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="nx">updateName</span><span class="p">);</span>
 <span class="ln">4</span>
@@ -517,12 +520,12 @@
 <ol>
 <li>Inline JS. This is typically not used or should not be used because it makes your HTML harder to read and maintain (and it goes against the principle of separation of concerns - HTML should just dictate your page structure and should be contained in the <code>.html</code> files, while the JavaScript code which makes it dynamic should be in separate <code>.js</code> files)</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="ln">1</span><span class="c">&lt;!--Here the onclick=&#34;...&#34; part is JavaScript and it is embedded in the HTML--&gt;</span>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="ln">1</span><span class="c">&lt;!--Here the onclick=&#34;...&#34; part is JavaScript and it is embedded in the HTML--&gt;</span>
 <span class="ln">2</span><span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&#34;javascript:alert(&#39;You clicked me!&#39;)&#34;</span><span class="p">&gt;</span>Click me!<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
 </code></pre></div><ol start="2">
 <li>Internal JS. This is similar to using a style tag in the case of Internal CSS. The position of the script tag is important as it determines when the JavaScript code is executed.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="ln">1</span><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>  
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="ln">1</span><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>  
 <span class="ln">2</span>    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
 <span class="ln">3</span>        <span class="kd">let</span> <span class="nx">counter</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
 <span class="ln">4</span>        <span class="nx">counter</span><span class="o">++</span><span class="p">;</span>
@@ -532,7 +535,7 @@
 </code></pre></div><ol start="2">
 <li>External JS. Here the JavaScript code is written in a separate file with the extension <code>.js</code></li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="ln">1</span><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>  
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="ln">1</span><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>  
 <span class="ln">2</span>    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;script.js&#34;</span> <span class="na">defer</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 <span class="ln">3</span>    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;script-independent.js&#34;</span> <span class="na">async</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 <span class="ln">4</span><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
@@ -544,14 +547,14 @@
 <h2 id="basic-js-guide">Basic JS Guide</h2>
 <h3 id="functions">Functions</h3>
 <p>JavaScript functions are named pieces of code which can be used to achieve a particular functionality. For example, in order to show up a pop-up with the text <code>Hello World!</code>, the following snippet of code can be used</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Hello World!&#39;</span><span class="p">);</span>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Hello World!&#39;</span><span class="p">);</span>
 </code></pre></div><p>Here <a href="https://www.w3schools.com/jsref/met_win_alert.asp">alert</a> is a function or piece of code available when you use JavaScript in a normal browser window. A function is called or executed by adding an opening and closing parantheses <code>()</code> after the name of the function. If the function takes any parameters, those are specified between the parantheses. Calling a function could change the state of the system (e.g. show a pop-up using <code>alert</code>) or simply return a value (e.g. return a random number between 0 and 1 in the case of <a href="https://www.w3schools.com/js/js_random.asp">Math.random</a>).</p>
 <p>You can also define your own functions to achieve some functionality and to be able to reuse this functionality. You can define a function as follows:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="kd">function</span> <span class="nx">name</span><span class="p">(</span><span class="nx">parameter1</span><span class="p">,</span> <span class="nx">parameter2</span><span class="p">,</span> <span class="nx">parameter3</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="kd">function</span> <span class="nx">name</span><span class="p">(</span><span class="nx">parameter1</span><span class="p">,</span> <span class="nx">parameter2</span><span class="p">,</span> <span class="nx">parameter3</span><span class="p">)</span> <span class="p">{</span>
 <span class="ln">2</span>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">parameter1</span><span class="p">);</span>
 <span class="ln">3</span><span class="p">}</span>
 </code></pre></div><p>The above function only prints a message in the JavaScript console. You can also create functions which return a value, you can use the <code>return</code> keyword. For example, the below piece of code returns the sum of the parameters passed to the function.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="c1">// Function definition
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="c1">// Function definition
 </span><span class="ln">2</span><span class="c1"></span><span class="kd">function</span> <span class="nx">sum</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
 <span class="ln">3</span>    <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">;</span>
 <span class="ln">4</span><span class="p">}</span>
@@ -563,7 +566,7 @@
 <p>Variables are named memory locations where you can store some data. Think of variables as similar to labeled boxes which can store data.</p>
 <p>Variables can be declared using the <code>let</code> or <code>var</code> keywords. The difference between the two is where the declared variable remains accessible or valid. A variable declared using <code>var</code> can be accessed anywhere in the program. However the validity or accessibility of a variable declared using <code>let</code> is limited to the scope (between the curly brackets) where it is defined.</p>
 <p>If the value of a variable does not need to change once it's assigned, you can use the <code>const</code> keyword to declare the variable.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="s2">&#34;JavaScript&#34;</span> 
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="s2">&#34;JavaScript&#34;</span> 
 <span class="ln">2</span><span class="kr">const</span> <span class="nx">PI</span> <span class="o">=</span> <span class="mf">3.14</span>
 <span class="ln">3</span><span class="kd">let</span> <span class="nx">lastName</span> <span class="o">=</span> <span class="s2">&#34;Language&#34;</span>
 </code></pre></div><p>There are several reasons you might want to use variables:</p>
@@ -571,7 +574,7 @@
 <li>To store the result of any function call whose value changes each time you call it (e.g. <code>Date() or Math.random()</code>).</li>
 <li>To make your code readable by splitting long statements. This is illustrated with an example below</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="c1">// Long and hard to read
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="c1">// Long and hard to read
 </span><span class="ln">2</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;element&#39;</span><span class="p">).</span><span class="nx">value</span><span class="p">);</span>
 <span class="ln">3</span>
 <span class="ln">4</span><span class="c1">// Easier to read and debug if something goes wrong
@@ -583,7 +586,7 @@
 </ul>
 <h3 id="data-types">Data Types</h3>
 <p>Variables can contain different types of values and data types. Below is a code snippet showing the simple or primitive types</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="ln"> 1</span><span class="c1">// Any type of numerical data belongs to the Number data type
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln"> 1</span><span class="c1">// Any type of numerical data belongs to the Number data type
 </span><span class="ln"> 2</span><span class="c1"></span><span class="kd">let</span> <span class="nx">age</span> <span class="o">=</span> <span class="mi">23</span><span class="p">;</span>
 <span class="ln"> 3</span><span class="kd">let</span> <span class="nx">percentage</span> <span class="o">=</span> <span class="mf">30.5</span><span class="p">;</span>
 <span class="ln"> 4</span><span class="kd">let</span> <span class="nx">loss</span> <span class="o">=</span> <span class="o">-</span><span class="mf">10.0</span><span class="p">;</span>
@@ -601,15 +604,15 @@
 </span><span class="ln">16</span><span class="c1"></span><span class="kd">let</span> <span class="nx">explicitUndefined</span> <span class="o">=</span> <span class="kc">undefined</span><span class="p">;</span>
 </code></pre></div><p>Apart from the above, there is an Object type which can be used to store more interesting data. There are primarily two sub-types which are interesting to us: Arrays and Objects.</p>
 <p>Arrays can be used to store ordered lists of any primitive data types. Let's say you want to store the names of the top 5 largest countries in the world, in the order of their size. An array is the perfect data type for this use case.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="nx">countries</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Russia&#39;</span><span class="p">,</span> <span class="s1">&#39;Canada&#39;</span><span class="p">,</span> <span class="s1">&#39;China&#39;</span><span class="p">,</span> <span class="s1">&#39;United States&#39;</span><span class="p">,</span> <span class="s1">&#39;Brazil&#39;</span><span class="p">];</span>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="nx">countries</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Russia&#39;</span><span class="p">,</span> <span class="s1">&#39;Canada&#39;</span><span class="p">,</span> <span class="s1">&#39;China&#39;</span><span class="p">,</span> <span class="s1">&#39;United States&#39;</span><span class="p">,</span> <span class="s1">&#39;Brazil&#39;</span><span class="p">];</span>
 </code></pre></div><p>The advantage of an array is that it also let's you access the value stored at a particular location. The only catch is that the numbering starts at 0, not at 1. So to access the value stored at the 1st location, use 0, for the 2nd location use 1 and so on. Accessing the values in an array by their position or index is called array indexing. You can perform array indexing by using the name of the array, followed by the required index in square brackets <code>[]</code>. For the above example, the below code snippet demonstrates how you can do array indexing</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">countries</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span> <span class="c1">// Prints Russia
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">countries</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span> <span class="c1">// Prints Russia
 </span><span class="ln">2</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">countries</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span> <span class="c1">// Prints Canada
 </span><span class="ln">3</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">countries</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span> <span class="c1">// Prints China
 </span><span class="ln">4</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">countries</span><span class="p">[</span><span class="mi">3</span><span class="p">]);</span> <span class="c1">// Prints United States
 </span><span class="ln">5</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">countries</span><span class="p">[</span><span class="mi">4</span><span class="p">]);</span> <span class="c1">// Prints Brazil
 </span></code></pre></div><p>Objects can be used to group information relevant to a single real-life entity in the code. For example, let's say you want to store the details of a person in the code. The below code snippet shows how you can do this using objects and compares it to the alternative.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="ln"> 1</span><span class="c1">// Approach 1: Without objects
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln"> 1</span><span class="c1">// Approach 1: Without objects
 </span><span class="ln"> 2</span><span class="c1"></span><span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="s1">&#39;John Doe&#39;</span><span class="p">;</span>
 <span class="ln"> 3</span><span class="kd">var</span> <span class="nx">age</span> <span class="o">=</span> <span class="mi">45</span><span class="p">;</span>
 <span class="ln"> 4</span><span class="kd">var</span> <span class="nx">address</span> <span class="o">=</span> <span class="s1">&#39;21 Elm Street, 5201 London, UK&#39;</span>
@@ -635,7 +638,7 @@
 <section class="grid-3"  >
 
 <div><p>Basic</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="o">+</span> <span class="err">—</span> <span class="c1">//Addition
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="o">+</span> <span class="err">—</span> <span class="c1">//Addition
 </span><span class="ln">2</span><span class="c1"></span><span class="o">-</span> <span class="err">—</span> <span class="c1">//Subtraction
 </span><span class="ln">3</span><span class="c1"></span><span class="o">*</span> <span class="err">—</span> <span class="nx">Multiplication</span>
 <span class="ln">4</span><span class="err">/ — Division</span>
@@ -647,7 +650,7 @@
 
 
 <div><p>Comparison</p>
-<pre tabindex="0"><code>== — Equal to (e.g. 3 == &quot;3&quot;)
+<pre><code>== — Equal to (e.g. 3 == &quot;3&quot;)
 === — Equal value and equal type (e.g. 3 === 3)
 != — Not equal (e.g. 3 != &quot;4&quot;)
 !== — Not equal value or not equal type (e.g. 3 !== &quot;3&quot;)
@@ -660,7 +663,7 @@
 
 
 <div><p>Logical</p>
-<pre tabindex="0"><code>&amp;&amp; — Logical and
+<pre><code>&amp;&amp; — Logical and
 || — Logical or
 ! — Logical not
 </code></pre></div>
@@ -668,7 +671,7 @@
 </section>
 </p>
 <h3 id="comments">Comments</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="cm">/*
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="cm">/*
 </span><span class="ln">2</span><span class="cm">    Comments are important because they help other people understand 
 </span><span class="ln">3</span><span class="cm">    what is going on in your code.
 </span><span class="ln">4</span><span class="cm">    We already used a lot of comments in the examples above.
@@ -680,7 +683,7 @@
 </span></code></pre></div><h3 id="ifelse-statement">If...else statement</h3>
 <p>Let's say you have to ask an input from the user and show a pop-up window which says &quot;Equal to 50&quot;, &quot;Less than 50&quot; or &quot;Greater than 50&quot; depending on the value entered by the user. This requires making a decision based on the value entered by the user. This is where you can use an if...else statement.</p>
 <p>A simple if statement is shown below. The condition can be a variable or any expression which is a boolean data type. The code inside the curly braces is evaluated only if the value of the boolean expression is <code>true</code>.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="ln"> 1</span><span class="k">if</span> <span class="p">(</span><span class="nx">condition</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln"> 1</span><span class="k">if</span> <span class="p">(</span><span class="nx">condition</span><span class="p">)</span> <span class="p">{</span>
 <span class="ln"> 2</span>    <span class="c1">// code goes here
 </span><span class="ln"> 3</span><span class="c1"></span><span class="p">}</span>
 <span class="ln"> 4</span>
@@ -696,7 +699,7 @@
 </span><span class="ln">14</span><span class="c1"></span>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Equal&#34;</span><span class="p">);</span>
 <span class="ln">15</span><span class="p">}</span>
 </code></pre></div><p>If there is a situation where you want to execute some code when the condition is <code>true</code> and some other code when the condition is <code>false</code>, you can use an if...else statement, which is demonstrated below</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="k">if</span> <span class="p">(</span><span class="nx">x</span> <span class="o">===</span> <span class="mi">50</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="k">if</span> <span class="p">(</span><span class="nx">x</span> <span class="o">===</span> <span class="mi">50</span><span class="p">)</span> <span class="p">{</span>
 <span class="ln">2</span>    <span class="c1">// You can put any code here which should execute if x is equal to 50
 </span><span class="ln">3</span><span class="c1"></span>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Equal&#34;</span><span class="p">);</span>
 <span class="ln">4</span><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
@@ -704,7 +707,7 @@
 </span><span class="ln">6</span><span class="c1"></span>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Not Equal&#34;</span><span class="p">);</span>
 <span class="ln">7</span><span class="p">}</span>
 </code></pre></div><p>If there are multiple different conditions you need to evaluate and execute code accordingly, you can use the if...else if...else construct</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="k">if</span> <span class="p">(</span><span class="nx">x</span> <span class="o">===</span> <span class="mi">50</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="k">if</span> <span class="p">(</span><span class="nx">x</span> <span class="o">===</span> <span class="mi">50</span><span class="p">)</span> <span class="p">{</span>
 <span class="ln">2</span>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Value and type are equal&#34;</span><span class="p">);</span>
 <span class="ln">3</span><span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">x</span> <span class="o">==</span> <span class="mi">50</span><span class="p">)</span> <span class="p">{</span>
 <span class="ln">4</span>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Value is equal&#34;</span><span class="p">);</span>
@@ -712,7 +715,7 @@
 <span class="ln">6</span>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Neither value nor type are equal&#34;</span><span class="p">);</span>
 <span class="ln">7</span><span class="p">}</span>
 </code></pre></div><p>The code snippet below shows how the scenario mentioned earlier can be coded.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="ln"> 1</span><span class="cm">/* prompt is a function which shows a pop-up asking for user input
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln"> 1</span><span class="cm">/* prompt is a function which shows a pop-up asking for user input
 </span><span class="ln"> 2</span><span class="cm">The parameter passed to the function is the message displayed on the pop-up */</span>
 <span class="ln"> 3</span><span class="kd">var</span> <span class="nx">userInput</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="s2">&#34;Enter a number&#34;</span><span class="p">);</span>
 <span class="ln"> 4</span>
@@ -748,8 +751,8 @@ Here since we want to respond to someone clicking on the button, the event type 
 The second parameter is the actual code to execute.
 This could be provided as a function declaration inline or as the name of a function declared elsewhere.
 The code or function which is called is referred to as the <code>event handler</code>, since it handles the event in some way.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="ln">1</span><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;show_popup&#34;</span><span class="p">&gt;</span>Show popup<span class="p">&lt;/</span><span class="nt">input</span><span class="p">&gt;</span>
-</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="ln"> 1</span><span class="kd">var</span> <span class="nx">btn</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;show_popup&#39;</span><span class="p">);</span>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="ln">1</span><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;show_popup&#34;</span><span class="p">&gt;</span>Show popup<span class="p">&lt;/</span><span class="nt">input</span><span class="p">&gt;</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln"> 1</span><span class="kd">var</span> <span class="nx">btn</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;show_popup&#39;</span><span class="p">);</span>
 <span class="ln"> 2</span><span class="nx">btn</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;click&#34;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
 <span class="ln"> 3</span>    <span class="nx">alert</span><span class="p">(</span><span class="s2">&#34;Here&#39;s a popup&#34;</span><span class="p">);</span>
 <span class="ln"> 4</span><span class="p">});</span>
