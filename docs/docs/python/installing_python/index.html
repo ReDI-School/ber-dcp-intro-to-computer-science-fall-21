@@ -9,19 +9,19 @@
 <link rel="mask-icon" href='https://redi-school.github.io/favicons/safari-pinned-tab.svg'  color="#004750">
 <link rel="shortcut icon" href='https://redi-school.github.io/favicons/favicon.ico'>
 <meta name="msapplication-config" content='https://redi-school.github.io/favicons/browserconfig.xml'>
-<title>07/October - Basic knowledge of CSS (Cascading Style Sheet) | Intro to Computer-Science Berlin 2021</title><meta property="og:title" content="07/October - Basic knowledge of CSS (Cascading Style Sheet)" />
+<title>02/November - Installing Python | Intro to Computer-Science Berlin 2021</title><meta property="og:title" content="02/November - Installing Python" />
 <meta property="og:description" content="Goals" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/web/basic_css/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/python/installing_python/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2021-10-07T09:42:14-07:00" />
+<meta property="article:modified_time" content="2021-09-14T12:27:41&#43;02:00" />
 
-<meta itemprop="name" content="07/October - Basic knowledge of CSS (Cascading Style Sheet)">
+<meta itemprop="name" content="02/November - Installing Python">
 <meta itemprop="description" content="Goals">
-<meta itemprop="dateModified" content="2021-10-07T09:42:14-07:00" />
-<meta itemprop="wordCount" content="996">
+<meta itemprop="dateModified" content="2021-09-14T12:27:41&#43;02:00" />
+<meta itemprop="wordCount" content="3642">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="07/October - Basic knowledge of CSS (Cascading Style Sheet)"/>
+<meta name="twitter:title" content="02/November - Installing Python"/>
 <meta name="twitter:description" content="Goals"/>
 
 
@@ -257,7 +257,7 @@
     <li><a href="#next-class-preparation">Next class preparation</a></li>
   </ul>
 </nav>
-        <h3 class="section_link active"><a id="docs-07october---basic-knowledge-of-css-cascading-style-sheet" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/web/basic_css/">07/October - Basic knowledge of CSS (Cascading Style Sheet)</a></h3><nav id="TableOfContents">
+        <h3 class="section_link"><a id="docs-07october---basic-knowledge-of-css-cascading-style-sheet" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/web/basic_css/">07/October - Basic knowledge of CSS (Cascading Style Sheet)</a></h3><nav id="TableOfContents">
   <ul>
     <li><a href="#preparations">Preparations</a>
       <ul>
@@ -344,7 +344,7 @@
   <section class="section aside_inner">
     <h2 class="section_title"><a  href="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/python/" class="group">4 - Programming in Python</a></h2>
       <section class="" id="docs-4---programming-in-python">
-        <h3 class="section_link"><a id="docs-02november---installing-python" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/python/installing_python/">02/November - Installing Python</a></h3><nav id="TableOfContents">
+        <h3 class="section_link active"><a id="docs-02november---installing-python" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/python/installing_python/">02/November - Installing Python</a></h3><nav id="TableOfContents">
   <ul>
     <li><a href="#pre-requisites">Pre Requisites</a>
       <ul>
@@ -425,19 +425,121 @@
 </aside>
 
   <main class="content">
-    <h1>07/October - Basic knowledge of CSS (Cascading Style Sheet)</h1><p><img src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics/css-declaration-small.png" alt="basic-css-image"></p>
-<h2 id="preparations">Preparations</h2>
-<h3 id="1-watch-these-videos">1. Watch these Videos</h3>
+    <h1>02/November - Installing Python</h1><p><img src="https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif" alt="python gif"></p>
+<h2 id="pre-requisites">Pre Requisites</h2>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=aHUtMbJw8iA">Why Is CSS So Weird?</a> - Theory &amp; history</li>
-<li><a href="https://www.youtube.com/watch?v=1PnVor36_40">Learn CSS in 20 Minutes</a> - Practice</li>
-<li><a href="https://www.youtube.com/watch?v=fYq5PXgSsbE">Learn CSS Flexbox 15 Minutes</a> - Practice</li>
-<li><a href="https://www.youtube.com/watch?v=9zBsdzdE4sM">Learn CSS Grid 20 Minutes</a> - Practice</li>
+<li>Review the course content from last class and bring any questions you have ! We will answer these questions at the beginning of class. (<em>Remember, if you have a question, so does someone else in the class, so please feel free to ask :)</em> ) <a href="../intro_to_python/" class="button">Review 26/October - Introduction to Python</a></li>
+<li>Read through the <code>Python Installation Overview</code> section below. Spend some time thinking about which option may make sense for you. VSCode or PyCharm will give you the most options and would enable you to continue practicing your command line and git/GitHub skills.</li>
+<li>Try getting set up with at least one of the options, but don't spend more than 1-2 hours on this if you run into a lot of unexpected problems. We will troubleshoot at the beginning of this session as well as in person at the ReDI school on Thursday for those who have issues installing.</li>
 </ul>
-<h3 id="2-html-class-practice-repository-on-github">2. HTML class practice repository on Github</h3>
-<p>We'll continue to apply some style to the journal we started building in our previous session <a href="../basic_html/">Basic HTML</a></p>
+<h3 id="python-installation-overview">Python Installation Overview</h3>
+<h4 id="google-colab">Google Colab</h4>
+<h5 id="overview">Overview</h5>
 <ul>
-<li><a href="https://github.com/ReDI-School/ber-intro-to-cs-2021-html-journal">https://github.com/ReDI-School/ber-intro-to-cs-2021-html-journal</a></li>
+<li>free, requires a google account (gmail) and an internet connection</li>
+<li>no need to install Python on your computer, as Colab comes with an interpreter built-in that can run your code</li>
+<li>easy to create a new document or create a &quot;copy&quot; of assignments that we create</li>
+<li>can use the UI to save copies to GitHub or to your Google Drive</li>
+<li>makes it easy to execute and write code in notebook &quot;cells&quot;; it's possible to mix code and text in a readable and clear way</li>
+<li>notebook-style is very common in the Data Science space, so if you think you may want to go in the direction of data science or analytics, this could be a great option
+<ul>
+<li>here's an <a href="https://colab.research.google.com/github/tensorflow/examples/blob/master/courses/udacity_intro_to_tensorflow_for_deep_learning/l01c01_introduction_to_colab_and_python.ipynb?hl=en#scrollTo=OVi775ZJ2bsy">example iPython Notebook</a> in Colab if you'd like to get a sense of what these are!</li>
+</ul>
+</li>
+<li>can be used for writing Python Notebooks (<code>.ipynb</code> only, no pure <code>.py</code> files)</li>
+<li>one of the options used in the Intro to Python course with ReDI school</li>
+<li>recommended if you don't feel as comfortable installing Python on your machine or had difficulties with this, you don't want to work on the command line or use git/GitHub, or you are particularly interested in learning data science/analysis in the future</li>
+</ul>
+<h5 id="setup-instructions">Setup instructions</h5>
+<ul>
+<li>Visit <a href="https://colab.research.google.com/">Google Colab</a>. You may need to login with your gmail account or else create a Google Account in order to use Google Colab.</li>
+<li>In the bottom right, click on <code>New Notebook</code>. This will create a new Python Notebook in your Google Drive. Some notes:
+<ul>
+<li>You can rename this file by clicking on the name (probably <code>Untitled0</code>) in the top left and renaming this. (See diagram below).</li>
+<li>(Note) If you want to save this Notebook in GitHub, you can create a repository in GitHub and initialize it with a <code>README</code> or other file. Then, in your Colab notebook, click <code>File &gt; Save Copy to GitHub</code>. You may need to authorize your account (let GitHub know that it's ok for Colab to write to your repositories on your behalf), but then you can select this repository, and Colab will save a copy to it with the current state. If you make changes that you want to commit, you can repeat this process.</li>
+</ul>
+</li>
+<li>In your notebook, click into the cell and write a Python statement of your choice (perhaps, a function to print <code>hello world</code> or add two numbers together). Then, click the play button (or use <code>Shift + Enter</code>) to execute this line of code. After a few seconds, the result of the expression should appear under the cell.
+<img src="../images/collab_setup_1.png" alt="diagram"></li>
+<li>Done! Optionally: check out the <a href="https://colab.research.google.com/notebooks/intro.ipynb#">Welcome to Colaboratory</a> notebook that Google has provided, and watch the <a href="https://www.youtube.com/watch?v=inN8seMm7UI">short introductory video</a> in it. This will just give you a sense of what you can do in Colab.</li>
+</ul>
+<h4 id="vscode">VSCode</h4>
+<ul>
+<li>free IDE that we have previously used in this class</li>
+<li>requires you to have installed a version of Python on your machine</li>
+<li>can be used for writing and executing Python Notebooks (like in Colab) as well as pure Python scripts and modules (<code>.ipynb</code> and <code>.py</code> files)</li>
+<li>can install extensions to add Python syntax-highlighting and coding tips</li>
+<li>will require you to continue practicing your command line and git/GitHub skills</li>
+<li>recommended if you feel comfortable installing Python, want to continue using the command line to navigate your file system and using git/GitHub as you develop your project, or you want to continue deepening your knowledge of one IDE rather than trying out a new platform</li>
+</ul>
+<h5 id="setup-instructions-1">Setup Instructions</h5>
+<ul>
+<li>
+<p>Download and install Python <a href="https://www.python.org/downloads/">at this link</a> (latest version -- 3.10.0). Complete all of the installer steps.</p>
+</li>
+<li>
+<p>(Optional) in the installed Python folder, there should be an <code>IDLE</code> program. Double click or run this program, which opens a Python interactive shell. This will execute Python code statements. Try it out by printing something (hint: use the <code>print</code> function)</p>
+</li>
+<li>
+<p>In VSCode, install the following extensions by clicking on the extensions tab on the left, searching for the following extensions, and clicking &quot;Install&quot; (see diagram):</p>
+<ul>
+<li><code>Python</code></li>
+<li><code>MagicPython</code></li>
+<li><code>Visual Studio IntelliCode</code></li>
+<li>Another option: <code>Python Extension Pack</code> which includes all three of the above extensions plus a few more</li>
+</ul>
+<p><img src="../images/vscode_pyinstallation.png" alt="diagram"></p>
+</li>
+<li>
+<p>In VSCode in the <code>View</code> menu in the top left corner, click <code>Command Palette</code> (or use the shortcut <code>Command-Shift-P</code>) which should bring down a dropdown menu. Here, type <code>&quot;Python: Select Interpreter&quot;</code> and click on this option. This should bring up a list of all Python versions installed on your
+computer -- select <code>3.10.0</code>, the version you installed.
+<img src="../images/vscode_pyinstallation_2.png" alt="diagram"></p>
+</li>
+<li>
+<p>(Optional) test that this works! Create a new project or a new file with the <code>.py</code> ending (for example: <code>hello_world.py</code>). Have this file output <code>&quot;Hello World!&quot;</code> (hint: use the <code>print</code> function). Click on the green play button in the top right corner to run the code. This should open the terminal in VSCode and print out the output. If you run into errors, try restarting VSCode to make sure all changes were in place, and then if you run into the same issue, Google this error or ask a teacher or peer in class!</p>
+</li>
+</ul>
+<h4 id="pycharm-community-edition">PyCharm (Community Edition)</h4>
+<ul>
+<li>Community Edition is free; upgrading to the Professional Edition is not necessary for the purposes of this course</li>
+<li>an IDE (integrated development environment) designed for Python</li>
+<li>requires you to have installed a version of Python on your machine</li>
+<li>built-in awesome features that help you write and execute Python code (function signature help + completion, syntax highlighting)</li>
+<li>can manage different Python virtual environments for you (different versions of Python, different additional packages specific to projects, etc.)</li>
+<li>can be used for writing and executing Python Notebooks (like in Colab) as well as pure Python scripts and modules (<code>.ipynb</code> and <code>.py</code> files)</li>
+<li>will require you to continue practicing your command line and git/GitHub skills</li>
+<li>one of the options used in the Intro to Python course with ReDI school</li>
+<li>recommended if you feel comfortable installing Python, want to continue using the command line to navigate your file system and using git/GitHub as you develop your project, or you think you may want to continue learning Python after this course</li>
+</ul>
+<h5 id="setup-instructions-2">Setup Instructions</h5>
+<ul>
+<li>
+<p>Download and install Python <a href="https://www.python.org/downloads/">at this link</a> (latest version -- 3.10.0). Complete all of the installer steps.</p>
+</li>
+<li>
+<p>(Optional) in the installed Python folder, there should be an <code>IDLE</code> program. Double click or run this program, which opens a Python interactive shell. This will execute Python code statements. Try it out by printing something (hint: use the <code>print</code> function)</p>
+</li>
+<li>
+<p>In PyCharm, can select different Python interpreters for each project. Since this is our first project, we need to add and setup a first interpreter. (In the future, you can select this interpreter again, or set up a new one in a similar way.)</p>
+</li>
+<li>
+<p>Open PyCharm and click on <code>New Project</code>. Choose a location for the new project; your normal coding folder is a good idea, as this will create a new directory within it.</p>
+</li>
+<li>
+<p>PyCharm will now ask you to configure your interpreter. Click on <code>Previously configured interpreter</code>, then on the three dots to the right of the select.
+<img src="../images/py_installation_3.png" alt="diagram">
+<em>(Note) you can also use PyCharm to create Virtual Environments. This is a more advanced topic and is out of scope for today, but feel free to look into this and reach out if you would like to know more!</em></p>
+</li>
+<li>
+<p>Select <code>System Installation</code> and select the path to your <code>Python 3.10</code> installation. Make sure that this is the path to the version of Python you just installed (3.10), <strong>not any other version that was already installed on your computer</strong>. (Note: the image shows the path to <code>3.9</code>, but it should say <code>3.10</code> for you if you downloaded the latest version of Python.)
+<img src="../images/py_installation_4.png" alt="diagram"></p>
+</li>
+<li>
+<p>Click <code>Ok</code> to finish configuring the Python version</p>
+</li>
+<li>
+<p>PyCharm may have already created a test <code>main.py</code> file for you. (If not, go ahead and create a file like <code>hello_world.py</code> and have it print out <code>hello world</code> or something else!) Then press the green play button in the top right corner to run this code.</p>
+</li>
 </ul>
 <hr>
 <h2 id="class-curriculum">Class Curriculum</h2>
@@ -451,166 +553,313 @@
 </thead>
 <tbody>
 <tr>
-<td>Lesson Agenda and Goals</td>
+<td>Lesson Goals</td>
 <td>5 minutes</td>
 <td>❌</td>
 </tr>
 <tr>
-<td>Questions from last session</td>
-<td>15 minutes</td>
+<td>Check-in on pre-reqs and questions from last class</td>
+<td>10-15 minutes</td>
+<td>Read and attempt installation instructions</td>
+</tr>
+<tr>
+<td>Short review/demo of each installation option</td>
+<td>20 minutes</td>
+<td>Read and attempt installation instructions</td>
+</tr>
+<tr>
+<td>Overview of loops (for, while)</td>
+<td>10-15 minutes</td>
 <td>❌</td>
 </tr>
 <tr>
-<td>Live demo on basic CSS</td>
-<td>25 minutes</td>
-<td>Preparations section</td>
-</tr>
-<tr>
-<td>Review CSS Activity task as a whole class</td>
+<td>Break</td>
 <td>10 minutes</td>
 <td>❌</td>
 </tr>
 <tr>
-<td>Class break</td>
-<td>10 minutes</td>
+<td>Troubleshooting installation in groups</td>
+<td>5-30 minutes</td>
+<td>Read and attempt installation instructions</td>
+</tr>
+<tr>
+<td>Hands-on Python exercises (in pairs)</td>
+<td>rest of class</td>
 <td>❌</td>
 </tr>
 <tr>
-<td>CSS Activity (in smaller groups)</td>
-<td>45-60 minutes</td>
-<td>VsCode and Git installed</td>
+<td>Check-out</td>
+<td>5 minutes</td>
+<td>❌</td>
 </tr>
 </tbody>
 </table>
-<h2 id="lesson-goal">Lesson Goal</h2>
-<p>Understand what CSS is, why we use it and how we can apply it to style HTML pages</p>
-<h2 id="css---what-is-it">CSS - What is it?</h2>
-<p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS">CSS (Cascading Style Sheets)</a> is a declarative language that controls how webpages look in the browser. The browser applies CSS style declarations to selected elements to display them properly. A style declaration contains the properties and their values, which determine how a webpage looks.</p>
-<p><a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS">CSS</a> is one of the three core Web technologies, along with HTML and JavaScript. CSS usually styles HTML elements, but can be also used with other markup languages like SVG or XML.</p>
-<h2 id="css-rule">CSS Rule</h2>
-<p>A CSS rule is a set of properties associated with a selector. Here is an example that makes every HTML paragraph yellow against a black background:</p>
-<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="ln">1</span><span class="c">/* The selector &#34;p&#34; indicates that all paragraphs in the document will be affected by that rule */</span>
-<span class="ln">2</span><span class="nt">p</span> <span class="p">{</span>
-<span class="ln">3</span>  <span class="c">/* The &#34;color&#34; property defines the text color, in this case yellow. */</span>
-<span class="ln">4</span>  <span class="k">color</span><span class="p">:</span> <span class="kc">yellow</span><span class="p">;</span>
-<span class="ln">5</span>
-<span class="ln">6</span>  <span class="c">/* The &#34;background-color&#34; property defines the background color, in this case black. */</span>
-<span class="ln">7</span>  <span class="k">background-color</span><span class="p">:</span> <span class="kc">black</span><span class="p">;</span>
-<span class="ln">8</span><span class="p">}</span>
-</code></pre></div><h2 id="how-does-css-actually-work">How does CSS Actually Work</h2>
-<p><img src="https://www.edureka.co/blog/wp-content/uploads/2019/08/CSS-underhood-css-interview-questions-edureka-1.png" alt="how-doess-css-actually-work"></p>
-<p>When a browser displays a document, it must combine the document's content with its style information. It processes the document in a number of stages, which we've listed below. Bear in mind that this is a very simplified version of what happens when a browser loads a webpage, and that different browsers will handle the process in different ways. But this is roughly what happens.</p>
+<h2 id="0-lesson-goals">0. Lesson Goals</h2>
+<ul>
+<li>Have a working development environment on Python.</li>
+<li>Build familiarity with the concepts of data types, functions, and control flow (loops, conditionals)</li>
+<li>Continue writing code in Python</li>
+</ul>
+<h2 id="1-check-in">1. Check-In</h2>
+<ul>
+<li>What was particularly challenging last class? Are there any remaining questions from last class?</li>
+<li>Was there anything you found strange or surprising last class? What are you excited to learn more about?</li>
+<li>Were there any challenges understanding the pre-requisites for today's class?</li>
+</ul>
+<h2 id="2-short-review-of-each-installation-option">2. Short review of each installation option</h2>
+<ul>
+<li>Colab, PyCharm, VSCode</li>
+<li>We will also take a look at a Python Notebook (<code>.ipynb</code>) vs. normal Python file <code>.py</code>. What is the difference between these two formats? How do we run each of these?
+<ul>
+<li>Notebooks are made up of &quot;cells&quot; which allow you to execute blocks of code. Cells can also contain Markdown or text, so these can be useful for demoing information or for storing plots, charts, and doing data analysis. Notebooks are commonly used in the Data Science and Machine Learning fields.</li>
+<li><code>.py</code> files are Python files, and can be executed by a Python interpreter via <code>path/to/python/installation filename.py</code> where you replace <code>path/to/python/installation</code> with the path to the location that you installed Python on your machine and <code>filename.py</code> with the name of your Python file. Your interpreter will also look for a <code>main.py</code> in your module or the statement: <code>if __name__ == '__main__':</code> in a file to know where to begin running your code. This is where you can tell the interpreter to start calling your functions.</li>
+</ul>
+</li>
+<li>We will take a look at the <code>IDLE</code> Python terminal that comes with your Python installation and how you can interactively execute lines of code here. (There are other Python terminals that you can install or use, such as <code>ipython</code>.) This can be useful for testing out your logic and syntax as you are writing a longer program as well!</li>
+</ul>
+<h2 id="3-for-and-while-loops">3. for and while loops</h2>
+<p>Loops are a tool that help us execute a block of code a specified amount of times or based on a condition. In Python, there are two loops: <code>for</code> and <code>while</code> loops.</p>
+<h3 id="while-loops">while loops</h3>
+<p><code>while</code> loops allow us to execute a block of code as long as the condition evaluates to <code>True</code>.</p>
+<p><img src="../images/loop_diagram.png" alt="loop diagram"></p>
+<p><em>Please excuse the ugly diagram :)</em></p>
+<p>Syntax:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">while</span> <span class="n">condition</span><span class="p">:</span>
+<span class="ln">2</span>    <span class="c1"># do things</span>
+</code></pre></div><p>Examples:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="c1"># This is called an &#34;infinite loop&#34; since the condition is always True!!</span>
+<span class="ln">2</span><span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+<span class="ln">3</span>    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;I&#39;m an infinite loop! I won&#39;t stop unless I&#39;m forced to!&#34;</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln"> 1</span><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="ln"> 2</span><span class="k">while</span> <span class="n">count</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+<span class="ln"> 3</span>    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;hello #&#34;</span><span class="p">,</span> <span class="n">count</span><span class="p">)</span>
+<span class="ln"> 4</span>    <span class="c1"># increment the value of `count`</span>
+<span class="ln"> 5</span>    <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="ln"> 6</span>    <span class="c1"># outputs:</span>
+<span class="ln"> 7</span>    <span class="c1"># hello # 0</span>
+<span class="ln"> 8</span>    <span class="c1"># hello # 1</span>
+<span class="ln"> 9</span>    <span class="c1"># hello # 2</span>
+<span class="ln">10</span>    <span class="c1"># hello # 3</span>
+<span class="ln">11</span>    <span class="c1"># hello # 4</span>
+<span class="ln">12</span>    <span class="c1"># hello # 5</span>
+<span class="ln">13</span>    <span class="c1"># hello # 6</span>
+<span class="ln">14</span>    <span class="c1"># hello # 7</span>
+<span class="ln">15</span>    <span class="c1"># hello # 8</span>
+<span class="ln">16</span>    <span class="c1"># hello # 9</span>
+<span class="ln">17</span>
+</code></pre></div><p>Check-in question: can someone explain what's going on in each of these examples?</p>
+<h3 id="for-loops">for loops</h3>
+<p><code>for</code> loops provide a way to go through each value (or set of values) in an iterable (e.g. a list, string, dictionary, etc.) and execute a block of code that uses that value.</p>
+<p>Syntax:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">for</span> <span class="n">variable</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="ow">in</span> <span class="n">iterable</span><span class="p">:</span>
+<span class="ln">2</span>    <span class="c1"># do things</span>
+</code></pre></div><p>Examples: (feel free to try executing these in your IDLE terminal, notebook cell (in Colab), VSCode, or PyCharm :)</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]:</span>
+<span class="ln">2</span>    <span class="k">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+<span class="ln">3</span>    <span class="c1"># outputs:</span>
+<span class="ln">4</span>    <span class="c1"># 1</span>
+<span class="ln">5</span>    <span class="c1"># 2</span>
+<span class="ln">6</span>    <span class="c1"># 3</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="s1">&#39;word&#39;</span><span class="p">:</span>
+<span class="ln">2</span>    <span class="n">new_word</span> <span class="o">=</span> <span class="n">letter</span> <span class="o">+</span> <span class="s1">&#39;!!&#39;</span>
+<span class="ln">3</span>    <span class="k">print</span><span class="p">(</span><span class="n">new_word</span><span class="p">)</span>
+<span class="ln">4</span>    <span class="c1"># outputs:</span>
+<span class="ln">5</span>    <span class="c1"># w!!</span>
+<span class="ln">6</span>    <span class="c1"># o!!</span>
+<span class="ln">7</span>    <span class="c1"># r!!</span>
+<span class="ln">8</span>    <span class="c1"># d!!</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="c1"># python</span>
+<span class="ln">2</span><span class="k">for</span> <span class="n">num</span><span class="p">,</span> <span class="n">letter</span> <span class="ow">in</span> <span class="p">[(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">)]:</span>
+<span class="ln">3</span>    <span class="c1"># Here, we convert number to string using `str` before concatenating with another string</span>
+<span class="ln">4</span>    <span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="o">+</span> <span class="n">letter</span><span class="p">)</span>
+<span class="ln">5</span>    <span class="c1"># outputs:</span>
+<span class="ln">6</span>    <span class="c1"># 1a</span>
+<span class="ln">7</span>    <span class="c1"># 2b</span>
+<span class="ln">8</span>
+</code></pre></div><p>With <code>for</code> loops, it can also be useful to use the <code>range</code> operator in Python which creates an iterable of numbers. The syntax of this is <code>range(start, end, step)</code>, but you will also see this as just <code>range(start, end)</code> or <code>range(end)</code> (in this last case, the <code>start</code> is assumed to be 0). Note that the <code>end</code> value is not included (in other words, &quot;numbers starting with <code>start</code> up until (not through) <code>end</code>&quot;). Here are some examples:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+<span class="ln">2</span>    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="ln">3</span>    <span class="c1"># outputs:</span>
+<span class="ln">4</span>    <span class="c1"># 0</span>
+<span class="ln">5</span>    <span class="c1"># 1</span>
+<span class="ln">6</span>    <span class="c1"># 2</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>  <span class="c1"># we can create a list out of a `range`</span>
+<span class="ln">2</span><span class="c1"># [1, 2, 3]</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>  <span class="c1"># here, the step (space between values) is 3</span>
+<span class="ln">2</span><span class="c1"># [-1, 2, 5, 8]</span>
+</code></pre></div><h2 id="4-troubleshooting-in-groups">4. Troubleshooting in Groups</h2>
+<p>We will split up into groups based on whether folks have Python installed or are having issues so that we can troubleshoot and get everyone set up as quickly as possible :)</p>
+<p>Groups that are done with installation can start working on the Python problems from the following section.</p>
+<h2 id="5-hands-on-python-tasks">5. Hands-on Python Tasks</h2>
+<p><strong>Work in groups</strong> to solve the following tasks in your new Python Dev setup. As a group exercise, we expect you to discuss with your group members to <strong>solve the problems together</strong>. This may mean having one person share their screen and talking through the code you will write together, and making sure you all understand before moving on to the next task. You are <strong>not expected</strong> to get through all of these in class, and they range from easier to harder. We will continue working on these exercises in the next session as well.</p>
+<p>Optionally, you may send in a link to a GitHub repository with your solutions (if working in VSCode or PyCharm) or share your notebook (if working in Colab) if you would like feedback on your work :)</p>
+<p>Note: if you are writing in Colab or a Python Notebook, then try to keep each task in a separate code cell. If you are writing in a pure Python file, consider wrapping each task in a function (that is, write a function to solve the task) and call these functions in the <code>if __name__ == '__main__':</code> block to test out your code. This might look something like:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln"> 1</span><span class="c1"># in your file:</span>
+<span class="ln"> 2</span><span class="k">def</span> <span class="nf">task_n</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<span class="ln"> 3</span>    <span class="c1"># code to solve task 1</span>
+<span class="ln"> 4</span>    <span class="o">...</span>
+<span class="ln"> 5</span>
+<span class="ln"> 6</span>    <span class="k">return</span> <span class="n">answer_to_task_n</span>
+<span class="ln"> 7</span>
+<span class="ln"> 8</span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="ln"> 9</span>    <span class="k">print</span><span class="p">(</span><span class="n">task_n</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>  <span class="c1"># prints output of task_n</span>
+<span class="ln">10</span>
+</code></pre></div><p>Note: it can be helpful to test out your functions by making sure that the functions return what you expect for a few different inputs. Make sure to try out a variety of inputs including some &quot;edge cases&quot;, or cases that are trickier and can cause problems. These edge cases often have to do with &quot;0&quot; or empty-inputs.
+(Optional): In Python, you can also write <code>assert</code> statements, where you would state what you believe the function to output to be, and it fails if this is not the case.</p>
+<p>Let's use an example task 0 to illustrate all the points above.</p>
+<h3 id="task-0-warmup">Task 0 (warmup)</h3>
+<p>Write a function called <code>add_10</code> that takes in an <em>integer</em>, adds 10, and returns this value.
+Test out these steps and make sure you feel comfortable with the process. The following tasks won't have a walk through, but you should follow the same rough process.</p>
+<p>Steps:</p>
 <ol>
-<li>
-<p>The browser loads the HTML (e.g. receives it from the network).</p>
-</li>
-<li>
-<p>It converts the HTML into a DOM (Document Object Model). The DOM represents the document in the computer's memory.</p>
-</li>
-<li>
-<p>The browser then fetches most of the resources that are linked to by the HTML document, such as embedded images and videos ... and linked CSS! JavaScript is handled a bit later on in the process, and we won't talk about it here to keep things simpler.</p>
-</li>
-<li>
-<p>The browser parses the fetched CSS, and sorts the different rules by their selector types into different &quot;buckets&quot;, e.g. element, class, ID, and so on. Based on the selectors it finds, it works out which rules should be applied to which nodes in the DOM, and attaches style to them as required (this intermediate step is called a render tree).</p>
-</li>
-<li>
-<p>The render tree is laid out in the structure it should appear in after the rules have been applied to it.</p>
-</li>
-<li>
-<p>The visual display of the page is shown on the screen (this stage is called painting).</p>
-</li>
+<li>Write out your <em>function skeleton</em>, or the empty function with the name and parameters. (Note: <code>n</code> is commonly used to denote a number, but you can also write more descriptive variable names):</li>
 </ol>
-<h2 id="how-css-is-structured">How CSS is structured</h2>
-<p>There are typically 3 ways we do that to include CSS in a HTML Page:</p>
-<ol>
-<li>Inline CSS</li>
-</ol>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="ln">1</span><span class="p">&lt;</span><span class="nt">h1</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;color: blue&#34;</span><span class="p">&gt;</span>Hello world!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">def</span> <span class="nf">add_10</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="ln">2</span>    <span class="c1"># TODO: add logic to add 10</span>
+<span class="ln">3</span>    <span class="k">return</span> <span class="s2">&#34;Not implemented&#34;</span>
 </code></pre></div><ol start="2">
-<li>Internal CSS</li>
+<li>Let's call this function somewhere so we can see what it's outputting.
+In a <code>.py</code> file:</li>
 </ol>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="ln">1</span><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-<span class="ln">2</span>  <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
-<span class="ln">3</span>    <span class="nt">h1</span> <span class="p">{</span>
-<span class="ln">4</span>      <span class="k">color</span><span class="p">:</span> <span class="kc">blue</span><span class="p">;</span>
-<span class="ln">5</span>    <span class="p">}</span>
-<span class="ln">6</span>  <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
-<span class="ln">7</span><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-</code></pre></div><ol start="2">
-<li>External CSS</li>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="ln">2</span>    <span class="c1"># the text is not required, but it helps me see what I called to get the output</span>
+<span class="ln">3</span>    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;add_10(3): &#34;</span><span class="p">,</span> <span class="n">add_10</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>  <span class="c1"># for now, this returns &#34;add_10(3): Not implemented&#34;</span>
+<span class="ln">4</span>
+</code></pre></div><ol start="3">
+<li>Let's add in some logic and check the values that it is outputting. If these values don't match your expectations (which often happens in programming), then take another look and try to understand what's going wrong. You can add <code>print</code> statements in your code as well to tell you what the values of different variables and conditions are while you are running your code. You should feel encouraged to look things up when you run into issues as well.</li>
 </ol>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="ln">1</span><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-<span class="ln">2</span>  <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;style.css&#34;</span> <span class="p">/&gt;</span>
-<span class="ln">3</span><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-</code></pre></div><h2 id="css-selectors">CSS Selectors</h2>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">def</span> <span class="nf">add_10</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="ln">2</span>    <span class="k">return</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">10</span>
+<span class="ln">3</span>
+<span class="ln">4</span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="ln">5</span>    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;add_10(3): &#34;</span><span class="p">,</span> <span class="n">add_10</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>  <span class="c1"># this should now print &#34;add_10(3): 13&#34;</span>
+<span class="ln">6</span>    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;add_10(-10): &#34;</span><span class="p">,</span> <span class="n">add_10</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">))</span>  <span class="c1"># this should now print &#34;add_10(-10): 0&#34;</span>
+<span class="ln">7</span>
+</code></pre></div><ol start="4">
+<li>Optional: you can also use <code>assert</code> statements to confirm your expectations. This is a way of writing simple &quot;test cases&quot; to make sure your logic works. This looks something like:</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">def</span> <span class="nf">add_10</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="ln">2</span>    <span class="k">return</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">10</span>
+<span class="ln">3</span>
+<span class="ln">4</span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="ln">5</span>    <span class="k">assert</span> <span class="n">add_10</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">13</span>
+<span class="ln">6</span>    <span class="k">assert</span> <span class="n">add_10</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+<span class="ln">7</span>    <span class="k">assert</span> <span class="n">add_10</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">10</span>
+<span class="ln">8</span>
+</code></pre></div><p>What happens if the assert statement is wrong? (Hint: try out something like <code>assert add_10(3) == 5</code> which we expect to fail and see what happens.)</p>
+<p>You can also add this in to a test function to organize your code:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln"> 1</span><span class="k">def</span> <span class="nf">add_10</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="ln"> 2</span>    <span class="k">return</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">10</span>
+<span class="ln"> 3</span>
+<span class="ln"> 4</span><span class="k">def</span> <span class="nf">test_add_10</span><span class="p">():</span>
+<span class="ln"> 5</span>    <span class="k">assert</span> <span class="n">add_10</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">13</span>
+<span class="ln"> 6</span>    <span class="k">assert</span> <span class="n">add_10</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+<span class="ln"> 7</span>    <span class="k">assert</span> <span class="n">add_10</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">10</span>
+<span class="ln"> 8</span>
+<span class="ln"> 9</span>
+<span class="ln">10</span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="ln">11</span>    <span class="n">test_add_10</span><span class="p">()</span>  <span class="c1"># expect no output if all assertions passed</span>
+<span class="ln">12</span>
+</code></pre></div><h3 id="task-1">Task 1</h3>
+<p>Write a function called <code>longer_string</code> that takes in two <em>strings</em> and returns the longer of the two. If they are the same length, return the first string.</p>
+<h3 id="task-2">Task 2</h3>
+<p>Write a function called <code>is_odd</code> that takes in an <em>integer</em> and returns <code>True</code> if the number is odd and <code>False</code> otherwise.</p>
+
+<div class="tip">
+  Hint: look up (Google) what the modulo (<code>%</code>) operator in Python is and use it to determine if a number is odd or even.
+</div>
+
+<h3 id="task-3-parts-1-2">Task 3 (parts 1, 2)</h3>
+<p>Write a function called <code>hello_world_n</code> that takes in an integer <code>n</code> and prints &quot;Hello, world!&quot; <code>n</code> times.</p>
 <ol>
-<li>Element</li>
+<li>do this using a <code>for</code> loop</li>
+<li>do this using a <code>while</code> loop</li>
 </ol>
-<p>The first way to select an HTML element is by simply using the name:</p>
-<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="ln">1</span><span class="nt">h1</span> <span class="p">{</span>
-<span class="ln">2</span>  <span class="k">font-size</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
-<span class="ln">3</span><span class="p">}</span>
-<span class="ln">4</span><span class="nt">p</span> <span class="p">{</span>
-<span class="ln">5</span>  <span class="k">color</span><span class="p">:</span> <span class="kc">green</span><span class="p">;</span>
-<span class="ln">6</span><span class="p">}</span>
-<span class="ln">7</span><span class="nt">div</span> <span class="p">{</span>
-<span class="ln">8</span>  <span class="k">margin</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
-<span class="ln">9</span><span class="p">}</span>
-</code></pre></div><p>We are selecting different elements like h1, p, div and giving them different style attributes. The font-size controls the size of the text, color sets the text color, and margin adds spacing around the element.</p>
+<h3 id="task-4">Task 4</h3>
+<p>Write a function called <code>sum_list</code> that takes in a list of integers (i.e. <code>[3, 0, 10, 4, 5, 3]</code>) and returns the sum of them. Do not use the <code>sum</code> function in your logic, but you can use this to test your logic! (Hint: <code>assert sum(lst) == ...</code>)</p>
+<h3 id="task-5">Task 5</h3>
+<p>Write a function that takes in a list of integers (i.e. <code>[3, 0, 10, 4, 5, 3]</code>) and prints the value of each element greater than 4.
+For example:</p>
+<ul>
+<li>
+<p>input: <code>[3, 0, 10, 4, 5, 3]</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="c1"># output:</span>
+<span class="ln">2</span><span class="c1"># 10</span>
+<span class="ln">3</span><span class="c1"># 5</span>
+</code></pre></div></li>
+<li>
+<p>input: <code>[4, 5, 6, 6, 5, 4]</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="c1"># output:</span>
+<span class="ln">2</span><span class="c1"># 5</span>
+<span class="ln">3</span><span class="c1"># 6</span>
+<span class="ln">4</span><span class="c1"># 6</span>
+<span class="ln">5</span><span class="c1"># 5</span>
+</code></pre></div></li>
+<li>
+<p>input: <code>[4, 3, 2, 1]</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="c1"># no output</span>
+</code></pre></div></li>
+</ul>
+
+<div class="tip">
+  <p>Optional Challenge: change your function to take in a second parameter, <code>min_val</code>. Now, print all values in the list greater than this value.</p>
+<p>Example input: <code>[4, 3, 2, 1]</code>, <code>2</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span>    <span class="c1"># output:</span>
+<span class="ln">2</span>    <span class="c1"># 4</span>
+<span class="ln">3</span>    <span class="c1"># 3</span>
+</code></pre></div>
+</div>
+
+<h3 id="challenge-task-6-parts-1-2">(Challenge) Task 6 (parts 1, 2)</h3>
+<p><em>Note: this one is optional and meant to be challenging! :)</em></p>
+<p>Like with task 4, do not use the Python function <code>max</code> in your function, but you can use this to test it out!</p>
+<ol>
+<li>Write a function that takes in a list of integers (i.e. <code>[3, 0, 10, 4, 5, 3]</code>) and returns largest value in the list.</li>
+<li>Write a function that takes in a list of strings (i.e. <code>['a', 'asdf', '']</code>) and returns the longest string in the list.</li>
+</ol>
+<h3 id="challenge-task-7-parts-1-2-3">(Challenge) Task 7 (parts 1, 2, 3)</h3>
+<p><em>Note: this one is optional and meant to be challenging! :)</em></p>
+<ol>
+<li>
+<p>Write a function that takes in an integer and prints all numbers below it that are divisible by 3. (Hint: recall Task 2 -- how can you check if a number is divisible by 3?)</p>
+<p>Example input: <code>12</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="c1"># output:</span>
+<span class="ln">2</span><span class="c1"># 0</span>
+<span class="ln">3</span><span class="c1"># 3</span>
+<span class="ln">4</span><span class="c1"># 6</span>
+<span class="ln">5</span><span class="c1"># 9</span>
+</code></pre></div></li>
+</ol>
 <ol start="2">
-<li>Class</li>
-</ol>
-<p>Another way of selecting HTML elements is by using the class attribute. In HTML, we can assign different classes to our elements. Each element can have multiple classes, and each class can also be applied to multiple elements as well.</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="ln">1</span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container&#34;</span><span class="p">&gt;</span>
-<span class="ln">2</span>  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>This is heading<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-<span class="ln">3</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="ln">4</span>
-<span class="ln">5</span>.container { background-color: blue; }
-</code></pre></div><p>In the code above, we have assigned the class of container to the div element. In the stylesheet, we select our class using .className format and giving it a blue background color.</p>
-<ol start="3">
-<li>ID</li>
-</ol>
-<p>Like classes, we can also use IDs to select HTML elements and apply styling to them. The only difference between class and ID is that one ID can be assigned to only one HTML element in one page.</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="ln">1</span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="ln">2</span>  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;para1&#34;</span><span class="p">&gt;</span>This is a paragraph<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-<span class="ln">3</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="ln">4</span>
-<span class="ln">5</span>#para1 { color: green; font-size: 16px; }
-</code></pre></div><h2 id="activities">Activities</h2>
-<ol>
 <li>
-<p>Add a style sheet to the journal you were working on previously, and change the colors, fonts, etc. of your journal. Be creative here! Make sure to commit and push the changes to your repository afterwards. Some example tasks:</p>
+<p>Modify the function to return how many numbers are divisible by 3, in addition to printing each number. (i.e. the returned value for the example input above would be <code>4</code> (0, 3, 6, 9)).</p>
+</li>
+<li>
+<p>Modify this function to make it general -- if the function takes in <code>n</code> and <code>k</code>, find out how many numbers less than <code>n</code> are divisible by <code>k</code>.</p>
+<p>Example input: <code>8</code>, <code>2</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="c1"># output:</span>
+<span class="ln">2</span><span class="c1"># 0</span>
+<span class="ln">3</span><span class="c1"># 2</span>
+<span class="ln">4</span><span class="c1"># 4</span>
+<span class="ln">5</span><span class="c1"># 6</span>
+<span class="ln">6</span><span class="c1"># returns 4</span>
+</code></pre></div></li>
+</ol>
+<h2 id="additional-resources">Additional Resources</h2>
 <ul>
-<li>Change the color and font size of all of the h1 (large heading) tags (hint: use element selection)</li>
-<li>Create several CSS classes to style the color, font, font size, background color, and alignment of text. Apply these classes to several elements of your journal.</li>
-<li>Create an &quot;id&quot; to select a particular paragraph or div in your journal and style (i.e. change the color or background of the paragraph or div).</li>
+<li><a href="https://www.w3schools.com/python/python_while_loops.asp">W3 schools Python while loops</a></li>
+<li><a href="https://www.w3schools.com/python/python_for_loops.asp">W3 schools Python for loops</a></li>
+<li><a href="https://www.tutorialspoint.com/python3/python_loops.htm">Tutorialspoint loops in Python</a></li>
+<li><a href="https://www.w3resource.com/python-exercises/python-conditional-statements-and-loop-exercises.php">additional practice problems on loops and conditions (note: some are challenging!)</a></li>
+<li><a href="https://www.practicepython.org/">additional practice problems (note: challenging!)</a></li>
 </ul>
-</li>
-<li>
-<p>(optional - it's ok if you don't get to this task!) Spend some time working through <a href="https://cssgridgarden.com/">Grid Garden</a> with your partner.</p>
-</li>
-<li>
-<p>(optional - it's ok if you don't get to this task!)Spend some time working through <a href="https://flukeout.github.io/">CSS Diner</a> with your partner.</p>
-</li>
-</ol>
-<h2 id="extra-resources">Extra resources</h2>
-<ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS">Learn to style HTML using CSS</a></li>
-<li><a href="https://www.youtube.com/watch?v=KOvGeFUHAC0&amp;list=PLgjjGlfBflIS3jdp_IkuRDB36MnXZG2hM&amp;index=10">Build a Classic Layout FAST in CSS Grid</a></li>
-<li><a href="https://www.youtube.com/watch?v=Sp9ZfSvpf7A">Inspecting the CSS Cascade using Firefox DevTools</a></li>
-<li><a href="https://flexboxfroggy.com/">Flexbox Froggy</a></li>
-</ul>
-<!-- - [Grid Garden](https://cssgridgarden.com/)
-- [CSS Diner](https://flukeout.github.io/) -->
-<h2 id="next-class-preparation">Next class preparation</h2>
-<a href="../html_css/" class="button mb-1 grid-4">Practical lesson demonstrating HTML &amp; CSS</a>
 
     <div class="pager">
   
   <div class="pager_item prev">
     
-    <a href="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/web/basic_html/" class="pager_link button" title="04/October - Basic knowledge of HTML">
-      <span class="pager_label">04/October - Basic knowledge of HTML</span>
+    <a href="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/web/basic_js/" class="pager_link button" title="14/October - Basic knowledge of Javascript">
+      <span class="pager_label">14/October - Basic knowledge of Javascript</span>
     </a>
   </div>
   
@@ -618,8 +867,8 @@
   
   <div class="pager_item next">
     
-    <a href="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/web/html_css/" class="pager_link button" title="12/October - Practical Demonstration of HTML and CSS">
-      <span class="pager_label">12/October - Practical Demonstration of HTML and CSS</span>
+    <a href="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/command/intro/" class="pager_link button" title="14/Sept - Inspiration class ">
+      <span class="pager_label">14/Sept - Inspiration class </span>
     </a>
   </div>
   
