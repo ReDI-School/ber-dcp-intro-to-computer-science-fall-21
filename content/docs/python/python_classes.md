@@ -26,7 +26,6 @@ description = "Goals"
 | Object-oriented Programming                            | 10 minutes           | ❌                                         |
 | Pillars of object-oriented programming                 | 10 minutes           | ❌                                         |
 | Break                                                  | 10 minutes           | ❌                                         |
-| Pillars of object-oriented programming                 | 10 minutes           | ❌                                         |
 | Task: Extend the pet clinic example                    | 20 minutes           | ❌
 | Bonus Task: Implement a REDI Course Management System  | 20 minutes           | ❌
 | Check-out                                              | 10 minutes           | ❌
@@ -44,6 +43,7 @@ description = "Goals"
 ## 1. Check-In
 
 - What was particularly challenging last class? Are there any remaining questions from last class?
+- What exercises were the most challenging? (Respond in the chat)
 
 ## 2. Procedural Programming
 
