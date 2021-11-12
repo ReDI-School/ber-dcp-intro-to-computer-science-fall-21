@@ -1,5 +1,5 @@
 +++
-title = "16/Nov - Object-oriented Python"
+title = "16/November - Object-oriented Python"
 description = "Goals"
 # weight = 10
 +++
