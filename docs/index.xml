@@ -44,7 +44,7 @@ Review Version Control with Git and GitHub: 21/September 2. Review exercises fro
     </item>
     
     <item>
-      <title>02/November - Installing Python</title>
+      <title>02/04/November - Installing Python</title>
       <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/python/installing_python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -53,22 +53,13 @@ Review Version Control with Git and GitHub: 21/September 2. Review exercises fro
     </item>
     
     <item>
-      <title>04/November - Practical Python Session</title>
+      <title>11/November - Practical Python Session</title>
       <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/python/practical_python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/python/practical_python/</guid>
       <description>Pre Requisites   Review the course content from last class, and try to continue going through the exercises! If you get stuck on any of them, no problem -- make a note of this so we can review these tasks at the beginning of class on Thursday.
 Review 02/November - Installing Python   (Optional) create a repository (local and remote) to gather your Python exercises from last class. Add and commit the file to the repository, and then push these to GitHub.</description>
-    </item>
-    
-    <item>
-      <title>11/Nov - Object-oriented Python</title>
-      <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/python/python_classes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/python/python_classes/</guid>
-      <description>Prerequisites  You have completely set up one of the three Python development options  VsCode PyCharm Google Colab Notebook   You have solved the tasks from the last class   Class Curriculum    Section content Expected time (mins) Pre - Requirements     Lesson Goals 5 minutes ❌   Check-in on pre-reqs and questions from last class 15 minutes ❌   Procedural programming 10 minutes ❌   Object-oriented Programming 10 minutes ❌   Pillars of object-oriented programming 10 minutes ❌   Break 10 minutes ❌   Task: Extend the pet clinic example 20 minutes ❌   Bonus Task: Implement a REDI Course Management System 20 minutes ❌   Check-out 10 minutes ❌    0.</description>
     </item>
     
     <item>
@@ -89,6 +80,15 @@ Review 02/November - Installing Python   (Optional) create a repository (local a
       <guid>https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/command/command_line_part1/</guid>
       <description>Pre Requisites Create an account on repl.it
  https://repl.it/signup  Class Curriculum    Section content Expected time (mins) Pre - Requirements     Operating system (OS) basics 20-25 minutes ❌   Principle of abstraction 5-10 minutes ❌   Graphical &amp;amp; command line interfaces to OS 5-10 minutes ❌   Linux file system hierarchy 5-10 minutes repl.it account   Class break 10 minutes ❌   The Linux command line 35-40 minutes repl.</description>
+    </item>
+    
+    <item>
+      <title>16/Nov - Object-oriented Python</title>
+      <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/python/python_classes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/python/python_classes/</guid>
+      <description>Prerequisites  You have completely set up one of the three Python development options  VsCode PyCharm Google Colab Notebook   You have solved the tasks from the last class   Class Curriculum    Section content Expected time (mins) Pre - Requirements     Lesson Goals 5 minutes ❌   Check-in on pre-reqs and questions from last class 15 minutes ❌   Procedural programming 10 minutes ❌   Object-oriented Programming 10 minutes ❌   Pillars of object-oriented programming 10 minutes ❌   Break 10 minutes ❌   Task: Extend the pet clinic example 20 minutes ❌   Bonus Task: Implement a REDI Course Management System 20 minutes ❌   Check-out 10 minutes ❌    0.</description>
     </item>
     
     <item>

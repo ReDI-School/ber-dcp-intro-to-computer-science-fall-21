@@ -1,5 +1,5 @@
 +++
-title = "02/November - Installing Python"
+title = "02/04/November - Installing Python"
 description = "Goals"
 # weight = 10
 +++
@@ -498,7 +498,7 @@ And for `if...elif...else`:
 ```python
 if CONDITION_A:
     STATEMENT_A
-elif: CONDITION_B:
+elif CONDITION_B:
     STATEMENT_B
 else:
     STATEMENT_C
