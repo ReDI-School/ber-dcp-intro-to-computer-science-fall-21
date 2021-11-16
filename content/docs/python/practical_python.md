@@ -1,5 +1,5 @@
 +++
-title = "11/November - Practical Python Session"
+title = "11/16/November - Practical Python Session"
 description = "Goals"
 # weight = 10
 +++
