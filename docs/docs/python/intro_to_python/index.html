@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="dark">
 <head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Hugo 0.89.3" />
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Hugo 0.81.0" />
 <link rel="apple-touch-icon" sizes="180x180" href='https://redi-school.github.io/favicons/apple-touch-icon.png'>
 <link rel="icon" type="image/png" sizes="32x32" href='https://redi-school.github.io/favicons/favicon-32x32.png'>
 <link rel="icon" type="image/png" sizes="16x16" href='https://redi-school.github.io/favicons/favicon-16x16.png'>
@@ -14,11 +14,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/python/intro_to_python/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2021-11-12T13:26:14+01:00" />
+<meta property="article:modified_time" content="2021-11-12T13:26:14&#43;01:00" />
 
 <meta itemprop="name" content="26/October - Introduction to Python">
 <meta itemprop="description" content="Goals">
-<meta itemprop="dateModified" content="2021-11-12T13:26:14+01:00" />
+<meta itemprop="dateModified" content="2021-11-12T13:26:14&#43;01:00" />
 <meta itemprop="wordCount" content="1733">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="26/October - Introduction to Python"/>
@@ -444,6 +444,17 @@
     <li><a href="#additional-resources">Additional Resources</a></li>
   </ul>
 </nav>
+        <h3 class="section_link"><a id="docs-23november---object-oriented-python" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/python/python_classes_practical/">23/November - Object-oriented Python</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#class-curriculum">Class Curriculum</a></li>
+    <li><a href="#0-lesson-goals">0. Lesson Goals</a></li>
+    <li><a href="#1-check-in">1. Check-In</a></li>
+    <li><a href="#2-kahoot">2. Kahoot</a></li>
+    <li><a href="#3-exercises-part-1">3. Exercises (part 1)</a></li>
+    <li><a href="#4-exercises-part-2">4. Exercises (part 2)</a></li>
+  </ul>
+</nav>
         <h3 class="section_link active"><a id="docs-26october---introduction-to-python" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/python/intro_to_python/">26/October - Introduction to Python</a></h3><nav id="TableOfContents">
   <ul>
     <li><a href="#pre-requisites">Pre Requisites</a></li>
@@ -642,7 +653,7 @@
 <li>
 <p>What does the <code>[#]</code> syntax do?</p>
 <p>This <em>indexes</em> into an iterable and gets you the <code>#</code> value of it. Note that the &quot;first&quot; index is &quot;0&quot;, because we 0-index in Python. For example:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span>  <span class="n">a</span> <span class="o">=</span> <span class="s1">&#39;asdf&#39;</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span>  <span class="n">a</span> <span class="o">=</span> <span class="s1">&#39;asdf&#39;</span>
 <span class="ln">2</span>  <span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
 <span class="ln">3</span>  <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="ln">4</span>  <span class="c1"># outputs: -&gt; &#39;a&#39;</span>
@@ -666,7 +677,7 @@
 </li>
 <li>
 <p>How about an <code>if ... else</code> statement?</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">if</span> <span class="n">CONDITION_A</span><span class="p">:</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">if</span> <span class="n">CONDITION_A</span><span class="p">:</span>
 <span class="ln">2</span>    <span class="n">STATEMENT_A</span>
 <span class="ln">3</span><span class="k">else</span><span class="p">:</span>
 <span class="ln">4</span>    <span class="n">STATEMENT_B</span>
@@ -674,7 +685,7 @@
 </li>
 <li>
 <p>How about <code>if ... elif ... else</code>?</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">if</span> <span class="n">CONDITION_A</span><span class="p">:</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">if</span> <span class="n">CONDITION_A</span><span class="p">:</span>
 <span class="ln">2</span>    <span class="n">STATEMENT_A</span>
 <span class="ln">3</span><span class="k">elif</span> <span class="n">CONDITION_B</span><span class="p">:</span>
 <span class="ln">4</span>    <span class="n">STATEMENT_B</span>
@@ -687,7 +698,7 @@
 <ul>
 <li>
 <p>What is a <strong>function</strong>?</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">def</span> <span class="nf">my_test_function</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">def</span> <span class="nf">my_test_function</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
 <span class="ln">2</span>    <span class="k">return</span> <span class="n">a</span>
 </code></pre></div><p>A <strong>function</strong> is a sequence of steps or tasks (written in a block of code), which may or may not take in <em>arguments</em>. Whenever we <em>call</em> a function, we execute this defined set of steps (with any <em>arguments</em> passed in). The above example function takes in some value and simply <em>returns</em>, or gives us back, this value when we <em>call</em> it like so: <code>my_test_function(12) # evaluates to 12</code></p>
 </li>
@@ -702,15 +713,15 @@
   <p>Tip: there is a built-in <code>print</code> function in Python that takes some input and outputs this to standard out (<code>STDOUT</code>), which is in this case the right side of the playground console.
 (Recall that the <code>#</code> stands for a &quot;comment&quot; in Python, meaning that this line is just a &quot;note&quot; to yourself and does not need to be included.)</p>
 <p>Example usage:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;asdf asdf&#34;</span><span class="p">)</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">print</span><span class="p">(</span><span class="s2">&#34;asdf asdf&#34;</span><span class="p">)</span>
 <span class="ln">2</span><span class="c1"># outputs -&gt; asdf asdf</span>
-<span class="ln">3</span><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;my name is&#34;</span><span class="p">,</span> <span class="s2">&#34;Robot&#34;</span><span class="p">)</span>
+<span class="ln">3</span><span class="k">print</span><span class="p">(</span><span class="s2">&#34;my name is&#34;</span><span class="p">,</span> <span class="s2">&#34;Robot&#34;</span><span class="p">)</span>
 <span class="ln">4</span><span class="c1"># outputs -&gt; my name is Robot</span>
 </code></pre></div>
 </div>
 
 <p>A Solution:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello, World!&#34;</span><span class="p">)</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">print</span><span class="p">(</span><span class="s2">&#34;Hello, World!&#34;</span><span class="p">)</span>
 </code></pre></div><h3 id="task-1-create-and-call-a-function-that-prints-hello-world">Task 1: create and call a function that prints &quot;Hello, World!&quot;</h3>
 
 <div class="tip">
@@ -718,32 +729,32 @@
 </div>
 
 <p>A Solution:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">def</span> <span class="nf">hello_world</span><span class="p">():</span>
-<span class="ln">2</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello, World!&#34;</span><span class="p">)</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">def</span> <span class="nf">hello_world</span><span class="p">():</span>
+<span class="ln">2</span>    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;Hello, World!&#34;</span><span class="p">)</span>
 <span class="ln">3</span>
 <span class="ln">4</span><span class="c1"># Let&#39;s call the function</span>
 <span class="ln">5</span><span class="n">hello_world</span><span class="p">()</span>
 </code></pre></div><h3 id="task-2-create-a-function-that-returns-the-string-hello-world-call-this-function-and-print-the-output">Task 2: create a function that returns the string &quot;Hello, World!&quot;. Call this function and print the output.</h3>
 <p>A solution:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">def</span> <span class="nf">hello_world</span><span class="p">():</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">def</span> <span class="nf">hello_world</span><span class="p">():</span>
 <span class="ln">2</span>    <span class="k">return</span> <span class="s2">&#34;Hello, World!&#34;</span>
 <span class="ln">3</span>
-<span class="ln">4</span><span class="nb">print</span><span class="p">(</span><span class="n">hello_world</span><span class="p">())</span>
+<span class="ln">4</span><span class="k">print</span><span class="p">(</span><span class="n">hello_world</span><span class="p">())</span>
 </code></pre></div><h3 id="task-3-modify-your-function-so-you-can-greet-a-specific-name-hello-person">Task 3: modify your function so you can greet a specific name: &quot;Hello, Person&quot;</h3>
 <p>In other words:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="n">my_hello_world</span><span class="p">(</span><span class="s2">&#34;Noor&#34;</span><span class="p">)</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="n">my_hello_world</span><span class="p">(</span><span class="s2">&#34;Noor&#34;</span><span class="p">)</span>
 <span class="ln">2</span><span class="c1"># expected output -&gt; &#34;Hello, Noor&#34;</span>
 </code></pre></div><p>A solution:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">def</span> <span class="nf">hello_world</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">def</span> <span class="nf">hello_world</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
 <span class="ln">2</span>    <span class="k">return</span> <span class="p">(</span><span class="s2">&#34;Hello, &#34;</span> <span class="o">+</span> <span class="n">name</span><span class="p">)</span>
 <span class="ln">3</span>
-<span class="ln">4</span><span class="nb">print</span><span class="p">(</span><span class="n">hello_world</span><span class="p">(</span><span class="s2">&#34;Noor&#34;</span><span class="p">))</span>
+<span class="ln">4</span><span class="k">print</span><span class="p">(</span><span class="n">hello_world</span><span class="p">(</span><span class="s2">&#34;Noor&#34;</span><span class="p">))</span>
 <span class="ln">5</span><span class="c1"># output -&gt; &#34;Hello, Noor&#34;</span>
-<span class="ln">6</span><span class="nb">print</span><span class="p">(</span><span class="n">hello_world</span><span class="p">(</span><span class="s2">&#34;Jose&#34;</span><span class="p">))</span>
+<span class="ln">6</span><span class="k">print</span><span class="p">(</span><span class="n">hello_world</span><span class="p">(</span><span class="s2">&#34;Jose&#34;</span><span class="p">))</span>
 <span class="ln">7</span><span class="c1"># output -&gt; &#34;Hello, Jose&#34;</span>
 </code></pre></div><p>Another solution:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">def</span> <span class="nf">hello_world</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
-<span class="ln">2</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello, &#34;</span> <span class="o">+</span> <span class="n">name</span><span class="p">)</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">def</span> <span class="nf">hello_world</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+<span class="ln">2</span>    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;Hello, &#34;</span> <span class="o">+</span> <span class="n">name</span><span class="p">)</span>
 <span class="ln">3</span>
 <span class="ln">4</span><span class="n">hello_world</span><span class="p">(</span><span class="s2">&#34;Noor&#34;</span><span class="p">)</span>
 <span class="ln">5</span><span class="c1"># output -&gt; &#34;Hello, Noor&#34;</span>
@@ -768,8 +779,8 @@
   
   <div class="pager_item prev">
     
-    <a href="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/git/git_and_github/" class="pager_link button" title="21/September - Version Control with Git and GitHub">
-      <span class="pager_label">21/September - Version Control with Git and GitHub</span>
+    <a href="https://redi-school.github.io/ber-dcp-intro-to-computer-science-fall-21/docs/python/python_classes_practical/" class="pager_link button" title="23/November - Object-oriented Python">
+      <span class="pager_label">23/November - Object-oriented Python</span>
     </a>
   </div>
   
