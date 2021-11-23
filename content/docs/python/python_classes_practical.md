@@ -8,14 +8,14 @@ description = "Goals"
 
 ## Prerequisites
 
-- Work on the bonus task (task 6) from the previous class
-- Review the following concepts from the [previous class](../python_classes.md/) and answer the following questions:
-0. What is object orientated programming
-1. Difference between an Object and a Class
-2. How do we define a constructor function
-3. How do we define attributes on a class
-4. How do we create a method on a class
-5. How do we create an inhertiance class
+- Review the following concepts from the [previous class](../python_classes/) and answer the following questions:
+  - What is object orientated programming
+  - Difference between an Object and a Class
+  - How do we define a constructor function
+  - How do we define attributes on a class
+  - How do we create a method on a class
+  - How do we create an inhertiance class
+- \[Recommended\]: Work on the bonus task (task 6) from the previous class
 - \[Optional\]: review the w3 schools' [materials on Python classes](https://www.w3schools.com/python/python_classes.asp)
 
 ---
